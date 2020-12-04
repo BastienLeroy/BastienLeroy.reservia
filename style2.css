@@ -12,7 +12,6 @@ body {
 }
 .p {
     font-family: "Raleway-Bold";
-
 }
 
 /* _______HEADER_______ */
@@ -42,5 +41,153 @@ body {
     justify-content: space-between;
 }
 
-/* _______________________ */
+/* ____________________ */
 
+
+/* ________MAIN________ */
+
+#block1 {
+    display: flex;
+    flex-direction: column;
+    
+    flex-wrap: wrap;
+    margin: 10px;
+}
+.info {
+    font-size: x-large ;
+    font-family: Raleway-Bold;
+    text-align: justify;
+}
+.searchBarZone {
+    
+    width: 400px;
+}
+.filters {
+    
+
+}
+.information {
+    
+
+}
+
+/* ///////////////////// */
+
+#block2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+.hosting {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: stretch;
+    background-color: #E1E1E1;
+    border-radius: 20px;
+    width: 987px;
+    margin: 20px;
+}
+.hostingCard {
+    border-radius: 20px !important;
+    margin: 20px;
+    height: 20rem;
+    width: 20rem;
+    border-radius: 1rem;
+    padding: 0.75rem;
+}
+.hostingCardImg {
+    height: 200px;
+    width: 100%;
+    background-size: 105%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 1rem;
+    
+}
+.card-img-top {
+   
+    
+}
+.mostPopular {
+    padding:2%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #E1E1E1;
+    width: 39%;
+    border-radius: 1rem;
+    margin: 20px;
+    
+}
+.mostPopularCard {
+    height: 198px;
+    width: 100%;
+}
+.card-body-row {
+
+}
+.mostPopularCardImg {
+    height: 200px;
+    width: 100%;
+    background-size: 105%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 1rem;
+}
+
+
+/* ///////////////////// */
+
+#block3 {
+    width: 100%;
+}
+.bock3 {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.testcard{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 23%;
+    height: 600px;
+}
+.activitiesCardImg1{
+    height: 600px;
+    background-size: cover;
+    border-radius: 20px 20px 0 0;
+}
+.activitiesCardImg2{
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px 20px 0 0;
+}
+.activitiesCardg1 {
+    border-radius: 20px !important;
+    height: 600px;
+    width: 23%;
+}
+.activitiesCardg2 {
+    border-radius: 20px !important;
+    height: 280px;
+    width: 100%;
+}
+.img-act {
+    height: 200px;
+}
+
+/*_____________________*/
+
+
+/* _______FOOTER_______ */
+
+.contact {
+
+}
+
+
+/* ____________________ */

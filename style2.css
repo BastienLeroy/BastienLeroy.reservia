@@ -9,6 +9,11 @@ body {
     background-color: #F2F2F2;
     width: 100vw;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+.testa {
+    width: 1300px;
 }
 .p {
     font-family: "Raleway-Bold";
@@ -30,8 +35,6 @@ body {
 .registerMenu{
     display: flex;
     justify-content: flex-end;
-    justify-content: space-between;
-    
     height: 50px;
     margin: 20px;
 }
@@ -48,9 +51,7 @@ li:hover nav-item {
 #block1 {
     display: flex;
     flex-direction: column;
-    
     flex-wrap: wrap;
-    margin: 10px;
 }
 .info {
     font-size: x-large ;
@@ -58,7 +59,6 @@ li:hover nav-item {
     text-align: justify;
 }
 .searchBarZone {
-    
     width: 400px;
 }
 .filters {
@@ -120,14 +120,13 @@ li:hover nav-item {
     align-content: stretch;
     background-color: #F2F2F2;
     border-radius: 20px;
-    width: 55%;
-    margin: 20px;
+    width: 900px;
 }
 .hostingCard {
     border-radius: 20px !important;
     margin: 20px;
     height: 20rem;
-    width: 20rem;
+    width: 260px;
     border-radius: 1rem;
     padding: 0.75rem;
 }
@@ -146,21 +145,17 @@ li:hover nav-item {
 }
 .textMost {
     display:flex;
-    
     justify-content: space-between;
 
 }
 .mostPopular {
-    padding:2%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     align-items: flex-start;
     background-color: #F2F2F2;
-    width: 30%;
+    width: 360px;
     border-radius: 1rem;
-    margin: 20px;
-    
 }
 .mostPopularCard {
     height: 198px;

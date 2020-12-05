@@ -13,13 +13,19 @@
         <div class="logo">
             <img class="logoImg" src="images/logo/logo.png">
         </div>
-    
+        
         <div class="registerMenu">
-            <nav class="nav nav-tabs">
-                <a href="#block2">Hebergement</a>
-                <a href="#block3">Activités</a>
-                <a href="nav-link">S'inscrire</a>
-            </nav>
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#block2">Hebergement</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#block3">Activités</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">S'inscrire</a>
+                </li>
+            </ul>              
         </div>
     </header>
 
@@ -28,7 +34,6 @@
             <p class="info">
             Trouver un hébergement pour des vacances de rêve
             </p>
-            <br />
             <p class="sub-info">
                 En plein centre ville ou en pleine nature
             </p>
@@ -54,27 +59,36 @@
             <div class="filters">
                 <h4>Filtres</h4>
 
-                <div class="money"><i class="fas fa-money-bill-wave"></i>
-                <button type="button" class="btn btn-outline-primary">Economique</button>
+                <div class="filtersItem">
+                    <div class="filtersItemIcon">
+                        <i class="fas fa-money-bill-wave"></i>
+                    </div>
+                    <h3 class="filtersItemH3">Economique</h3>
                 </div>
 
-                <div class="child"><i class="fas fa-child"></i>
-                <button type="button" class="btn btn-outline-primary">Familial</button>
+                <div class="filtersItem">
+                    <div class="filtersItemIcon">
+                        <i class="fas fa-child"></i>
+                    </div>
+                    <h3 class="filtersItemH3">Familial</h3>
                 </div>
 
-                <div class="heart"><i class="fas fa-heart"></i>
-                <button type="button" class="btn btn-outline-primary">Romantique</button>
+                <div class="filtersItem">
+                    <div class="filtersItemIcon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3 class="filtersItemH3">Romantique</h3>
                 </div>
 
-                <div class="dog"><i class="fas fa-dog"></i>
-                <button type="button" class="btn btn-outline-primary">Animaux autorisés</button>
+                <div class="filtersItem">
+                    <div class="filtersItemIcon">
+                        <i class="fas fa-dog"></i>
+                    </div>
+                    <h3 class="filtersItemH3">Animaux autorisé</h3>
                 </div>
             </div>
             <p class= "information">
-            <svg width="1em" height="2em" viewBox="0 0 16 16" class="bi bi-info" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <path d="M8.93 6.588l-2.29.287-.082.38.45xUdHPiFHQ7xbKh19G45saF1raB2ot5pag8p1Hnk4yrfXRJZskr8TMbFpVfC5tDk8eQQg63TqkW9gKhwagx6HePTaK2yXb-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588z"/>
-                <circle cx="8" cy="4.5" r="1"/>
-            </svg> Plus de 500 logements sont disponibles dans cette ville.
+                <i class="fas fa-info"></i> Plus de 500 logements sont disponibles dans cette ville.
             </p>
         </div>
         <div id= "block2">
@@ -170,7 +184,10 @@
                 </div>
             </div>
             <div class="mostPopular">
-                <h2>les plus populaires</h2>
+                <div class="textMost">
+                    <div><h2>les plus populaires</h2></div>
+                    <div><h2><i class="fas fa-chart-line"></i></h2></div>
+                </div>
                 <div class="card mb-3 mostPopularCard">
                     <div class="row no-gutters">
                         <div class="col-md-4">

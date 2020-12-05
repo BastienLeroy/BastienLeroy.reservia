@@ -18,6 +18,9 @@ body {
 .p {
     font-family: "Raleway-Bold";
 }
+.card-body {
+    padding: 1.25rem !important;
+}
 
 /* _______HEADER_______ */
 
@@ -112,26 +115,37 @@ li:hover nav-item {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    
 }
+
 .hosting {
     display: flex;
-    flex-wrap: wrap;
-    align-content: stretch;
+    flex-direction: column;
     background-color: #F2F2F2;
     border-radius: 20px;
     width: 900px;
+    padding: 0 1rem;
+}
+.hosting > h3 {
+    margin: 1rem 0 0 1.3rem;
+}
+.hostingItems {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
 }
 .hostingCard {
     border-radius: 20px !important;
-    margin: 20px;
-    height: 20rem;
+    height: 230px;
     width: 260px;
     border-radius: 1rem;
-    padding: 0.75rem;
+    background-color: white;
+    border: 2px solid #f2f2f2;
+    padding: 0.3rem;
+    margin-top: 0.5rem;
 }
 .hostingCardImg {
-    height: 200px;
+    height: 130px;
     width: 100%;
     background-size: 105%;
     background-repeat: no-repeat;
@@ -139,38 +153,53 @@ li:hover nav-item {
     border-radius: 1rem;
     
 }
-.card-img-top {
-   
-    
+.hostingCardBody {
+    height: 100px;
+    margin: 0.5rem;
 }
-.textMost {
+.hostingCardBody > h5 {
+    font-size: 100%;
+    font-weight: bold;
+}
+.hostingCardBody > p {
+    font-size: 80%;
+    margin: 0;
+}
+.hosting > h5 {
+    margin: 1rem 0 1rem 1.3rem;
+}
+
+.mostPopularTitle {
     display:flex;
     justify-content: space-between;
-
 }
 .mostPopular {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
-    align-items: flex-start;
     background-color: #F2F2F2;
     width: 360px;
-    border-radius: 1rem;
+    padding: 0 1rem;
+    border-radius: 20px;
 }
 .mostPopularCard {
-    height: 198px;
+    display: flex;
+    flex-direction: row !important;
+    height: 150px;
     width: 100%;
-}
-.card-body-row {
-
+    margin: 0.5rem 0;
+    padding: 0.3rem;
+    border-radius: 20px !important;
 }
 .mostPopularCardImg {
-    height: 200px;
-    width: 100%;
-    background-size: 105%;
+    height: 100%;
+    width: 140px;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    border-radius: 1rem;
+    border-radius: 20px 0 0 20px;
+}
+.mostPopularCardBody {
+    width: 220px;
 }
 
 

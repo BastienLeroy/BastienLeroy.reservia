@@ -12,7 +12,7 @@ body {
     display: flex;
     justify-content: center;
 }
-.testa {
+.pageOne {
     width: 1300px;
 }
 .p {
@@ -58,7 +58,7 @@ li:hover nav-item {
 }
 .info {
     font-size: x-large ;
-    font-family: Raleway-Bold;
+    font-family: Bold;
     text-align: justify;
 }
 .searchBarZone {
@@ -157,22 +157,22 @@ li:hover nav-item {
     height: 100px;
     margin: 0.5rem;
 }
-.hostingCardBody > h5 {
+.hostingCardBody > a > h5 {
     font-size: 100%;
     font-weight: bold;
+    color: black;
 }
-.hostingCardBody > p {
+.hostingCardBody > a > p {
     font-size: 80%;
     margin: 0;
+    color: black;
 }
-.hosting > h5 {
+.hosting > a > h5 {
     margin: 1rem 0 1rem 1.3rem;
 }
 
-.mostPopularTitle {
-    display:flex;
-    justify-content: space-between;
-}
+/*________partie most popular________*/
+
 .mostPopular {
     display: flex;
     flex-direction: column;
@@ -180,6 +180,21 @@ li:hover nav-item {
     width: 360px;
     padding: 0 1rem;
     border-radius: 20px;
+    padding-bottom:2rem;
+   }
+.mostPopularTitle {
+    Display:flex;
+    justify-content: space-around;
+    margin-top: 1rem ;
+    margin-bottom: -0.7rem;
+    
+   }
+
+.mostPopularItems {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
 }
 .mostPopularCard {
     display: flex;
@@ -200,17 +215,24 @@ li:hover nav-item {
 }
 .mostPopularCardBody {
     width: 220px;
+    margin : 0 ;
+}   
+.mostPopularCardBody > a > h5 {
+    font-size: 100%;
+    font-weight: bold;
+    color: black;
 }
+
 
 
 /* ///////////////////// */
 
-#block3 {
+#block3  {
     width: 100%;
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
-.bock3 {
+.bock3  {
     display: flex;
     justify-content: space-around;
     width: 100%;

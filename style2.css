@@ -1,5 +1,5 @@
 @font-face {
-    font-family: "Raleway";
+    font-family: "Raleway", sans-serif;
     src:
         url(Fonts/Raleway-VariableFont_wght.ttf)
         url(Fonts/Raleway-Italic-VariableFont_wght.ttf)
@@ -11,15 +11,13 @@ body {
     height: 100vh;
     display: flex;
     justify-content: center;
+    font-family: "Raleway" !important;
 }
 .pageOne {
     width: 1300px;
 }
-.p {
-    font-family: "Raleway-Bold";
-}
-.card-body {
-    padding: 1.25rem !important;
+h3 {
+    font-weight: bold !important;
 }
 
 /* _______HEADER_______ */
@@ -41,8 +39,8 @@ body {
     height: 50px;
     margin: 20px;
 }
-li:hover nav-item {
-    color: black;
+.nav-item-underline:hover {
+    border-bottom: 2px solid blue;
 
 }
 
@@ -58,7 +56,6 @@ li:hover nav-item {
 }
 .info {
     font-size: x-large ;
-    font-family: Bold;
     text-align: justify;
 }
 .searchBarZone {
@@ -73,6 +70,9 @@ li:hover nav-item {
     margin-bottom: 1rem;
 
 }
+.filters > a:hover {
+    text-decoration: none !important;
+}
 .filtersItem {
     display: flex;
     align-items: center;
@@ -82,6 +82,16 @@ li:hover nav-item {
     height: 40px;
     padding-right: 10px;
     border-radius: 20px;
+    color : black;
+       
+}
+.filtersItem:hover{
+    transform: scale(1.10);
+	-ms-transform: scale(1.10);
+	-webkit-transform: scale(1.10);
+	-o-transform: scale(1.10);
+    -moz-transform: scale(1.10);
+    
 }
 .filtersItemIcon {
     display: flex;
@@ -104,12 +114,15 @@ li:hover nav-item {
     margin: 0;
 	padding: 0;
 }
+
 .information {
     
 
 }
 
 /* ///////////////////// */
+
+/*________partie Hosting________*/
 
 #block2 {
     display: flex;
@@ -123,10 +136,13 @@ li:hover nav-item {
     background-color: #F2F2F2;
     border-radius: 20px;
     width: 900px;
-    padding: 0 1rem;
+    padding-bottom: 0 1rem;
 }
-.hosting > h3 {
-    margin: 1rem 0 0 1.3rem;
+.hosting > a > h5 {
+    margin: 1rem 0 1rem 1.3rem;
+}
+.hostingTitle {
+    margin : 1rem 0 0 1.3rem;
 }
 .hostingItems {
     display: flex;
@@ -145,30 +161,38 @@ li:hover nav-item {
     margin-top: 0.5rem;
 }
 .hostingCardImg {
-    height: 130px;
+    height: 60%;
     width: 100%;
     background-size: 105%;
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 1rem;
-    
 }
 .hostingCardBody {
-    height: 100px;
+    height: calc(40% - 0.5rem);
     margin: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
-.hostingCardBody > a > h5 {
+.hostingCardBodyH5 {
     font-size: 100%;
     font-weight: bold;
     color: black;
 }
-.hostingCardBody > a > p {
+.hostingCardBodyP {
     font-size: 80%;
     margin: 0;
     color: black;
 }
-.hosting > a > h5 {
-    margin: 1rem 0 1rem 1.3rem;
+
+/*_____effet de style hover pour hosting______*/
+.hostingCard:hover {
+    transform: scale(1.05);
+	-ms-transform: scale(1.05);
+	-webkit-transform: scale(1.05);
+	-o-transform: scale(1.05);
+	-moz-transform: scale(1.05);
 }
 
 /*________partie most popular________*/
@@ -184,18 +208,11 @@ li:hover nav-item {
    }
 .mostPopularTitle {
     Display:flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-top: 1rem ;
     margin-bottom: -0.7rem;
-    
-   }
-
-.mostPopularItems {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    width: 100%;
 }
+
 .mostPopularCard {
     display: flex;
     flex-direction: row !important;
@@ -204,6 +221,8 @@ li:hover nav-item {
     margin: 0.5rem 0;
     padding: 0.3rem;
     border-radius: 20px !important;
+    background-color: white;
+    border: 2px solid #f2f2f2;
 }
 .mostPopularCardImg {
     height: 100%;
@@ -214,13 +233,30 @@ li:hover nav-item {
     border-radius: 20px 0 0 20px;
 }
 .mostPopularCardBody {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 220px;
-    margin : 0 ;
+    margin : 0.5rem;
 }   
-.mostPopularCardBody > a > h5 {
+.mostPopularCardBodyTop > h5 {
     font-size: 100%;
     font-weight: bold;
     color: black;
+}
+.mostPopularCardBodyTop > p {
+    font-size: 80%;
+    margin: 0;
+    color: black;
+}
+/*_____effet de style hover pour mostPopular______*/
+
+.mostPopularCard:hover {
+    transform: scale(1.05);
+	-ms-transform: scale(1.05);
+	-webkit-transform: scale(1.05);
+	-o-transform: scale(1.05);
+	-moz-transform: scale(1.05);
 }
 
 
@@ -231,6 +267,9 @@ li:hover nav-item {
     width: 100%;
     margin-top: 2rem;
     margin-bottom: 2rem;
+}
+.activitiesTitle {
+    margin : 1rem 0 0 1.3rem;
 }
 .bock3  {
     display: flex;
@@ -244,7 +283,7 @@ li:hover nav-item {
     width: 23%;
     height: 600px;
 }
-.activitiesCardImg1{
+.activitiesCardImg1 {
     height: 600px;
     background-size: cover;
     border-radius: 20px 20px 0 0;
@@ -268,6 +307,22 @@ li:hover nav-item {
 .img-act {
     height: 200px;
 }
+/*_______effet de style hover pour activité______*/
+
+.activitiesCardg1:hover {
+    transform: scale(1.05);
+	-ms-transform: scale(1.05);
+	-webkit-transform: scale(1.05);
+	-o-transform: scale(1.05);
+	-moz-transform: scale(1.05);
+}
+.activitiesCardg2:hover {
+    transform: scale(1.05);
+	-ms-transform: scale(1.05);
+	-webkit-transform: scale(1.05);
+	-o-transform: scale(1.05);
+	-moz-transform: scale(1.05);
+}
 
 /*_____________________*/
 
@@ -278,16 +333,17 @@ li:hover nav-item {
     display: flex;
     flex-direction: row;
     background-color: #F2F2F2;
-    justify-content: space-around;
+    justify-content: flex-start;
+    
 }
 .about {
-
+    margin: 1rem 12rem 0 1rem;
 }
 .accommodation {
-
+    margin: 1rem 12rem 0 1rem;
 }
 .help {
-
+    margin: 1rem 0 0 1rem;
 }
 
 

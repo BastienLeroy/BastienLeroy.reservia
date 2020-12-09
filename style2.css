@@ -1,3 +1,12 @@
+/*__________ reset CSS ___________*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed,  figure, figcaption, footer, header, hgroup,  menu, nav, output, ruby, section, summary, time, mark, audio, video {  
+    margin: 0;  
+    padding: 0;  
+    border: 0;  
+    font-size: 100%;  
+    font: inherit;  
+    vertical-align: baseline; 
+ }
 @font-face {
     font-family: "Raleway", sans-serif;
     src:
@@ -6,7 +15,6 @@
 }
 
 body {
-    background-color: #F2F2F2;
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -18,8 +26,16 @@ body {
 }
 h3 {
     font-weight: bold !important;
-}
+    font-size: 1.5rem;
 
+}
+a:link 
+{ 
+    text-decoration:none; 
+} 
+.fa-star {
+    color:#0065FC;
+}
 /* _______HEADER_______ */
 
 .navBar {
@@ -33,22 +49,34 @@ h3 {
 .logoImg {
     height: 100%;
 }
-.registerMenu{
-    display: flex;
-    justify-content: flex-end;
+.registerMenu {
+    width: 30%;
     height: 50px;
     margin: 20px;
 }
-.nav-item-underline:hover {
-    border-bottom: 2px solid blue;
-
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+    
 }
+
+.navItemUnderline:hover {
+   
+    border-top: 2px solid blue;
+}
+.navItemUnderline{
+    margin-right: 3rem;
+}
+
 
 /* ____________________ */
 
 
 /* ________MAIN________ */
 
+/*_________partie recherche et filtres____*/
 #block1 {
     display: flex;
     flex-direction: column;
@@ -58,8 +86,35 @@ h3 {
     font-size: x-large ;
     text-align: justify;
 }
-.searchBarZone {
-    width: 400px;
+.inputGroup {
+    display: flex;
+    flex-direction: row;
+    width: 350px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.btnHere {
+    width: 50px;
+    height: 40px;
+    color :black;
+    border-radius: 10px 0 0 10px;
+}
+.btnHere:hover{
+    cursor:pointer;
+}
+
+.search {
+    width: 250px;
+}
+.btnSearch {
+    width: 100px;
+    height: 40px;
+    background-color : #0065FC;
+    color: white;
+    border-radius : 0 10px 10px 0;
+}
+.btnSearch:hover{
+    cursor:pointer;
 }
 .filters {
     display: flex;
@@ -68,11 +123,14 @@ h3 {
     width: 800px;
     margin-top: 1rem;
     margin-bottom: 1rem;
-
-}
+ }
+ .filters > h4 {
+     margin-top : 0.7rem
+ }
 .filters > a:hover {
     text-decoration: none !important;
 }
+
 .filtersItem {
     display: flex;
     align-items: center;
@@ -115,9 +173,16 @@ h3 {
 	padding: 0;
 }
 
-.information {
-    
 
+.information {
+    margin : 0 0 1rem 1rem; 
+}
+.fa-info {
+    width: 20px;
+    margin-right: 0.5rem;
+    color : #0065FC;
+    border : 1px grey solid;
+    border-radius: 50%;
 }
 
 /* ///////////////////// */
@@ -135,7 +200,7 @@ h3 {
     flex-direction: column;
     background-color: #F2F2F2;
     border-radius: 20px;
-    width: 900px;
+    width: 880px;
     padding-bottom: 0 1rem;
 }
 .hosting > a > h5 {
@@ -153,7 +218,7 @@ h3 {
 .hostingCard {
     border-radius: 20px !important;
     height: 230px;
-    width: 260px;
+    width: 28%;
     border-radius: 1rem;
     background-color: white;
     border: 2px solid #f2f2f2;
@@ -185,6 +250,24 @@ h3 {
     margin: 0;
     color: black;
 }
+.showMore {
+    margin : 1rem 0 0 2rem;
+    width: 120px;
+}
+.showMore > a {
+    color: black;
+    font-size: 1.2rem;
+}
+.showMore > a:hover {
+    color : #0065FC;
+}
+.showMore:hover {
+    transform: scale(1.05);
+	-ms-transform: scale(1.05);
+	-webkit-transform: scale(1.05);
+	-o-transform: scale(1.05);
+	-moz-transform: scale(1.05);
+}
 
 /*_____effet de style hover pour hosting______*/
 .hostingCard:hover {
@@ -195,6 +278,7 @@ h3 {
 	-moz-transform: scale(1.05);
 }
 
+
 /*________partie most popular________*/
 
 .mostPopular {
@@ -202,7 +286,7 @@ h3 {
     flex-direction: column;
     background-color: #F2F2F2;
     width: 360px;
-    padding: 0 1rem;
+    padding: 0 1rem 0 1rem;
     border-radius: 20px;
     padding-bottom:2rem;
    }
@@ -210,14 +294,16 @@ h3 {
     Display:flex;
     justify-content: space-between;
     margin-top: 1rem ;
-    margin-bottom: -0.7rem;
+}
+.fa-chart-line {
+    font-size: 1.5rem;
 }
 
 .mostPopularCard {
     display: flex;
     flex-direction: row !important;
     height: 150px;
-    width: 100%;
+    width: 95%;
     margin: 0.5rem 0;
     padding: 0.3rem;
     border-radius: 20px !important;
@@ -262,7 +348,7 @@ h3 {
 
 
 /* ///////////////////// */
-
+/*_________partie activité ________*/
 #block3  {
     width: 100%;
     margin-top: 2rem;
@@ -284,28 +370,57 @@ h3 {
     height: 600px;
 }
 .activitiesCardImg1 {
-    height: 600px;
+    height: 560px;
     background-size: cover;
     border-radius: 20px 20px 0 0;
 }
 .activitiesCardImg2{
-    height: 600px;
+    height: 250px;
     background-size: cover;
     background-position: center;
     border-radius: 20px 20px 0 0;
 }
+.activitiesCardImg3 {
+    height: 290px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px 20px 0 0;
+}
+.activitiesCardImg4 {
+    height: 210px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px 20px 0 0;
+}
+
 .activitiesCardg1 {
-    border-radius: 20px !important;
+    border-radius: 20px ;
     height: 600px;
     width: 23%;
+    border: 1px #f2f2f2 solid;
+    box-shadow: 2px 2px 2px #f2f2f2;
 }
 .activitiesCardg2 {
-    border-radius: 20px !important;
-    height: 280px;
+    border-radius: 20px ;
+    height: 290px;
     width: 100%;
+    border: 1px #f2f2f2 solid;
+    box-shadow: 2px 2px 2px #f2f2f2;
 }
-.img-act {
-    height: 200px;
+.activitiesCardg3 {
+    height: 330px;
+    border: 1px #f2f2f2 solid;
+    box-shadow: 2px 2px 2px #f2f2f2;
+    border-radius: 20px ;
+}
+.activitiesCardg4 {
+    height: 250px;
+    border: 1px #f2f2f2 solid;
+    box-shadow: 2px 2px 2px #f2f2f2;
+    border-radius: 20px ;
+}
+.card-body {
+    margin: 0.5rem 0 0 0.5rem;
 }
 /*_______effet de style hover pour activité______*/
 
@@ -323,6 +438,20 @@ h3 {
 	-o-transform: scale(1.05);
 	-moz-transform: scale(1.05);
 }
+.activitiesCardg3:hover {
+    transform: scale(1.05);
+	-ms-transform: scale(1.05);
+	-webkit-transform: scale(1.05);
+	-o-transform: scale(1.05);
+	-moz-transform: scale(1.05);
+}
+.activitiesCardg4:hover {
+    transform: scale(1.05);
+	-ms-transform: scale(1.05);
+	-webkit-transform: scale(1.05);
+	-o-transform: scale(1.05);
+	-moz-transform: scale(1.05);
+}
 
 /*_____________________*/
 
@@ -330,11 +459,13 @@ h3 {
 /* _______FOOTER_______ */
 
 #contact {
+    height: 180px;
     display: flex;
     flex-direction: row;
     background-color: #F2F2F2;
     justify-content: flex-start;
-    
+    padding-top: 2rem;
+       
 }
 .about {
     margin: 1rem 12rem 0 1rem;
@@ -346,5 +477,75 @@ h3 {
     margin: 1rem 0 0 1rem;
 }
 
+/*_________effet de style pour le footer____*/
 
+
+.text1, .text2, .text3, .text4, .text5, .text6, .text7, .text8, .text9, .text10 {
+    margin-top: 0.5rem;
+}
+.text1 > a, .text2 > a, .text3 > a, .text4 > a {
+    color: black;
+}
+.text1 > a:hover, .text2 > a:hover, .text3 > a:hover, .text4 > a:hover {
+    color : #0065FC;
+    
+}
+.text1:hover, .text2:hover, .text3:hover, .text4:hover {
+    transform: scale(1.05);
+	-ms-transform: scale(1.05);
+	-webkit-transform: scale(1.05);
+	-o-transform: scale(1.05);
+	-moz-transform: scale(1.05);
+}
+.text5 > a, .text6 > a, .text7 > a {
+    color: black;
+}
+.text5 > a:hover, .text6 > a:hover, .text7 > a:hover {
+    color : #0065FC;
+    
+}
+.text5:hover, .text6:hover, .text7:hover {
+    transform: scale(1.05);
+	-ms-transform: scale(1.05);
+	-webkit-transform: scale(1.05);
+	-o-transform: scale(1.05);
+	-moz-transform: scale(1.05);
+}
+.text8 > a, .text9 > a, .text10 > a {
+    color: black;
+}
+.text8 > a:hover, .text9 > a:hover, .text10 > a:hover {
+    color : #0065FC;
+    
+}
+
+.text8:hover, .text9:hover, .text10:hover {
+    transform: scale(1.05);
+	-ms-transform: scale(1.05);
+	-webkit-transform: scale(1.05);
+	-o-transform: scale(1.05);
+	-moz-transform: scale(1.05);
+}
+.accommodation > a {
+    color: black;
+}
+.accommodation > a:hover {
+    color : #0065FC;
+    transform: scale(1.05);
+	-ms-transform: scale(1.05);
+	-webkit-transform: scale(1.05);
+	-o-transform: scale(1.05);
+	-moz-transform: scale(1.05);
+}
+.help > a {
+    color: black;
+}
+.help > a:hover {
+    color : #0065FC;
+    transform: scale(1.05);
+	-ms-transform: scale(1.05);
+	-webkit-transform: scale(1.05);
+	-o-transform: scale(1.05);
+	-moz-transform: scale(1.05);
+}
 /* ____________________ */

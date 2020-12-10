@@ -638,7 +638,16 @@ a:link
     right: 40px;
     top : 40px;
 }
-
+.hosting {
+    width: 100%;
+}
+.mostPopular {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    flex-direction: row;
+    margin-top: 2rem;
+}
 @media all and (max-width: 900px) {
-    
+
 }

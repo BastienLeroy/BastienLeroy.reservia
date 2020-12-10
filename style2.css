@@ -19,13 +19,14 @@ body {
     height: 100vh;
     display: flex;
     justify-content: center;
-    font-family: "Raleway" !important;
-}
+    font-family: "Raleway";
+    }
 .pageOne {
-    width: 1300px;
+    padding-left: 2rem;
+    width: 1240px;
 }
 h3 {
-    font-weight: bold !important;
+    font-weight: bold;
     font-size: 1.5rem;
 
 }
@@ -59,12 +60,45 @@ a:link
     flex-direction: row;
     justify-content: space-between;
     list-style-type: none;
-    
+    margin-top: 1rem;
 }
-
+.underLine {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.navItem {
+    font-weight: bold;
+}
+.navItem > a {
+    color: black;
+}
+.navItem > a:hover {
+    color: #0065FC;
+}
+.navItem:hover {
+    transform: scale(1.05);
+	-ms-transform: scale(1.05);
+	-webkit-transform: scale(1.05);
+	-o-transform: scale(1.05);
+	-moz-transform: scale(1.05);
+}
+.navItemUnderline {
+        font-weight: bold;
+}
+.navItemUnderline > a {
+    color: black;
+}
+.navItemUnderline > a:hover {
+    color: #0065FC;
+}
 .navItemUnderline:hover {
-   
     border-top: 2px solid blue;
+    transform: scale(1.05);
+	-ms-transform: scale(1.05);
+	-webkit-transform: scale(1.05);
+	-o-transform: scale(1.05);
+	-moz-transform: scale(1.05);
 }
 .navItemUnderline{
     margin-right: 3rem;
@@ -92,12 +126,14 @@ a:link
     width: 350px;
     margin-top: 1rem;
     margin-bottom: 1rem;
+    
 }
 .btnHere {
     width: 50px;
     height: 40px;
     color :black;
     border-radius: 10px 0 0 10px;
+    border:none;
 }
 .btnHere:hover{
     cursor:pointer;
@@ -106,12 +142,16 @@ a:link
 .search {
     width: 250px;
 }
+.formControl {
+    border-color: #F2F2F2;
+}
 .btnSearch {
     width: 100px;
     height: 40px;
     background-color : #0065FC;
     color: white;
     border-radius : 0 10px 10px 0;
+    border:none;
 }
 .btnSearch:hover{
     cursor:pointer;
@@ -128,7 +168,7 @@ a:link
      margin-top : 0.7rem
  }
 .filters > a:hover {
-    text-decoration: none !important;
+    text-decoration: none;
 }
 
 .filtersItem {
@@ -182,7 +222,11 @@ a:link
     margin-right: 0.5rem;
     color : #0065FC;
     border : 1px grey solid;
-    border-radius: 50%;
+    border-radius: 100%;
+}
+.fa-info:before {
+    margin: 0.2rem 0 0.2rem 0.5rem;
+    font-size: 0.8rem;
 }
 
 /* ///////////////////// */
@@ -192,7 +236,7 @@ a:link
 #block2 {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .hosting {
@@ -200,7 +244,7 @@ a:link
     flex-direction: column;
     background-color: #F2F2F2;
     border-radius: 20px;
-    width: 880px;
+    width: 870px;
     padding-bottom: 0 1rem;
 }
 .hosting > a > h5 {
@@ -216,7 +260,7 @@ a:link
     width: 100%;
 }
 .hostingCard {
-    border-radius: 20px !important;
+    border-radius: 20px;
     height: 230px;
     width: 28%;
     border-radius: 1rem;
@@ -285,7 +329,7 @@ a:link
     display: flex;
     flex-direction: column;
     background-color: #F2F2F2;
-    width: 360px;
+    width: 306px;
     padding: 0 1rem 0 1rem;
     border-radius: 20px;
     padding-bottom:2rem;
@@ -301,12 +345,12 @@ a:link
 
 .mostPopularCard {
     display: flex;
-    flex-direction: row !important;
+    flex-direction: row ;
     height: 150px;
     width: 95%;
     margin: 0.5rem 0;
     padding: 0.3rem;
-    border-radius: 20px !important;
+    border-radius: 20px ;
     background-color: white;
     border: 2px solid #f2f2f2;
 }
@@ -355,14 +399,14 @@ a:link
     margin-bottom: 2rem;
 }
 .activitiesTitle {
-    margin : 1rem 0 0 1.3rem;
+    margin : 1rem 0 1rem 1.3rem;
 }
 .bock3  {
     display: flex;
     justify-content: space-around;
     width: 100%;
 }
-.testcard{
+.testCard{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -381,13 +425,13 @@ a:link
     border-radius: 20px 20px 0 0;
 }
 .activitiesCardImg3 {
-    height: 290px;
+    height: 340px;
     background-size: cover;
     background-position: center;
     border-radius: 20px 20px 0 0;
 }
 .activitiesCardImg4 {
-    height: 210px;
+    height: 160px;
     background-size: cover;
     background-position: center;
     border-radius: 20px 20px 0 0;
@@ -400,6 +444,10 @@ a:link
     border: 1px #f2f2f2 solid;
     box-shadow: 2px 2px 2px #f2f2f2;
 }
+.activitiesCardg1 > a {
+    color: black;
+    font-weight: bold;
+}
 .activitiesCardg2 {
     border-radius: 20px ;
     height: 290px;
@@ -407,17 +455,29 @@ a:link
     border: 1px #f2f2f2 solid;
     box-shadow: 2px 2px 2px #f2f2f2;
 }
+.activitiesCardg2 > a {
+    color: black;
+    font-weight: bold;
+}
 .activitiesCardg3 {
-    height: 330px;
+    height: 380px;
     border: 1px #f2f2f2 solid;
     box-shadow: 2px 2px 2px #f2f2f2;
     border-radius: 20px ;
 }
+.activitiesCardg3 > a {
+    color: black;
+    font-weight: bold;
+}
 .activitiesCardg4 {
-    height: 250px;
+    height: 200px;
     border: 1px #f2f2f2 solid;
     box-shadow: 2px 2px 2px #f2f2f2;
     border-radius: 20px ;
+}
+.activitiesCardg4 > a {
+    color: black;
+    font-weight: bold;
 }
 .card-body {
     margin: 0.5rem 0 0 0.5rem;
@@ -549,3 +609,36 @@ a:link
 	-moz-transform: scale(1.05);
 }
 /* ____________________ */
+
+/*______RESPONSIVE______*/
+
+/*_______________desktop____________________*/
+@media screen and (max-width: 1239px) {
+.logo {
+    position: absolute;
+}
+
+.underLine {
+    border-bottom : 2px #F2F2F2 solid;
+    position: absolute;
+    justify-content: space-around;
+}
+.underLine:hover {
+    border-bottom : 2px #0065FC solid;
+}
+.registerMenu {
+    width: 100%;
+}
+.nav {
+    margin-top: 3rem;
+    width: auto;
+    }
+.navItem {
+    position: absolute;
+    right: 40px;
+    top : 40px;
+}
+
+@media all and (max-width: 900px) {
+    
+}

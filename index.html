@@ -6,23 +6,26 @@
     <title>Reservia</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style2.css" />
+    <link rel="stylesheet" href="globalCSS.css">
+    <link rel="stylesheet" href="smallScreenCSS.css">
+    <link rel="stylesheet" href="mediumScreenCSS.css">
+    <link rel="stylesheet" href="largeScreenCSS.css">
     <script src="https://kit.fontawesome.com/e7227013d8.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="pageOne">
+    <div class="container">
         <header class ="navBar">
             <div class="logo">
-                <img class="logoImg" src="images/logo/logo.png">
+                <img class="logoImg" src="images/logo/logo.png" alt="logo">
             </div>
             
             <div class="registerMenu">
                 <ul class="nav">
                     <div class="underLine">
-                        <li class="navItemUnderline">
+                        <li class="navItemUnderline1">
                             <a class="nav-link active" href="#block2">Hebergement</a>
                         </li>
-                        <li class="navItemUnderline">
+                        <li class="navItemUnderline2">
                             <a class="nav-link active" href="#block3">Activités</a>
                         </li>
                     </div>
@@ -43,7 +46,7 @@
                 </p>
                 <div class="searchBarZone">
                     <div class="searchBar">
-                        <form action="" class="navbarRight">
+                        <form action="#" class="navbarRight">
                             <div class="inputGroup">
                                 <button type="button" class="btnHere">
                                     <i class="fas fa-map-marker-alt"></i>
@@ -132,11 +135,11 @@
                                     <h5 class="hostingCardBodyH5">Auberge le Panier</h5>
                                     <p class="hostingCardBodyP">Nuit à partir de 23€</p>
                                     <div class="rating">
-                                        <a href="#5" title="Donner 1 étoiles"><i class="fas fa-star"></i></a>
-                                        <a href="#4" title="Donner 2 étoiles"><i class="fas fa-star"></i></a>
-                                        <a href="#3" title="Donner 3 étoiles"><i class="fas fa-star"></i></a>
-                                        <a href="#2" title="Donner 4 étoiles"><i class="fas fa-star"></i></a>
-                                        <a href="#1" title="Donner 5 étoiles"><i class="far fa-star"></i></a>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
                                     </div>
                                 </div>
                             </a>
@@ -146,7 +149,7 @@
                             <a href="#">
                                 <div class="hostingCardImg" style="background-image: url('images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg')"></div>
                                 <div class="hostingCardBody">
-                                    <h5 class="hostingCardBodyH5">Hotel chez Alita</h5>
+                                    <h5 class="hostingCardBodyH5">Hotel chez Amina</h5>
                                     <p class="hostingCardBodyP">Nuit à partir de 86€</p>
                                     <div class="rating">
                                         <a href="#5" title="Donner 1 étoiles"><i class="fas fa-star"></i></a>
@@ -215,12 +218,14 @@
                         <a href="#">
                             <h5>Afficher plus</h5>
                         </a>
-                        </div>
                     </div>
+                </div>
                 <div class="mostPopular">
                     <div class="mostPopularTitle">
                         <div><h3>Les plus populaires</h3></div>
-                        <div><i class="fas fa-chart-line"></i></div>
+                        <div class="mostPopularTitleIcon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
                     </div>
 
                     <div class="mostPopularCard">
@@ -287,29 +292,29 @@
                     <h3>Activités à Marseille</h3>
                 </div>
                 
-                <div class="bock3">
-                    <div class="activitiesCardg1">
+                <div class="activitiesCardSection">
+                    <div class="activitiesCard activitiesCardg1">
                         <a href="#">
-                            <div class="activitiesCardImg1" style="background-image: url('images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg')"></div>
+                            <div class="activitiesCardImg activitiesCardImg1" style="background-image: url('images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg')"></div>
                             <div class="card-body">
                                 <h5 class="card-title">Vieux port</h5>
                             </div>
                         </a>
                     </div>
                                         
-                    <div class="testCard">
-                        <div class="activitiesCardg3">
+                    <div class="activitiesCardDuo">
+                        <div class="activitiesCard activitiesCardg3">
                             <a href="#">
-                                <div class="activitiesCardImg3" style="background-image: url('images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg')"></div>
+                                <div class="activitiesCardImg activitiesCardImg3" style="background-image: url('images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg')"></div>
                                 <div class="card-body">
                                     <h5 class="card-title">Fort de Pomègues</h5>
                                 </div>
                             </a>
                         </div>
                         
-                        <div class="activitiesCardg4">
+                        <div class="activitiesCard activitiesCardg4">
                             <a href="#">
-                                <div class="activitiesCardImg4" style="background-image: url('images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg')"></div>
+                                <div class="activitiesCardImg activitiesCardImg4" style="background-image: url('images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg')"></div>
                                 <div class="card-body">
                                     <h5 class="card-title">Iles du Frioul</h5>
                                 </div>
@@ -317,28 +322,28 @@
                         </div>
                     </div>
                     
-                    <div class="activitiesCardg1">
+                    <div class="activitiesCard activitiesCardg1">
                         <a href="#">
-                            <div class="activitiesCardImg1" style="background-image: url('images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg')"></div>
+                            <div class="activitiesCardImg activitiesCardImg1" style="background-image: url('images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg')"></div>
                             <div class="card-body">
                                 <h5 class="card-title">Parc National des Calanques</h5>
                             </div>
                         </a>
                     </div>
                     
-                    <div class="testCard">
-                        <div class="activitiesCardg2">
+                    <div class="activitiesCardDuo">
+                        <div class="activitiesCard activitiesCardg2">
                             <a href="#">
-                                <div class="activitiesCardImg2" style="background-image: url('images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg')"></div>
+                                <div class="activitiesCardImg activitiesCardImg2" style="background-image: url('images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg')"></div>
                                 <div class="card-body">
                                     <h5 class="card-title">Notre-Dame-de-la-Garde</h5>
                                 </div>
                             </a>
                         </div>
                         
-                        <div class="activitiesCardg2">
+                        <div class="activitiesCard activitiesCardg2">
                             <a href="#">
-                                <div class="activitiesCardImg2" style="background-image: url('images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg')"></div>
+                                <div class="activitiesCardImg activitiesCardImg2" style="background-image: url('images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg')"></div>
                                 <div class="card-body">
                                     <h5 class="card-title">Parc Longchamps</h5>
                                 </div>
@@ -354,41 +359,41 @@
 
         <footer>
             <div id="contact">
-                <div class="about">
-                    <div class="text1">
+                <div class="about footerSection">
+                    <div class="textFooter">
                     <a href="en cours de construction"><h3>A propos</h3></a>
                     </div>
-                    <div class="text2">
+                    <div class="textFooter">
                     <a href="en cours de construction"><p>Fonctionnement du site</p></a>
                     </div>
-                    <div class="text3">
+                    <div class="textFooter">
                     <a href="en cours de construction"><p>Conditions générales de vente</p></a>
                     </div>
-                    <div class="text4">
+                    <div class="textFooter">
                     <a href="en cours de construction"><p>Données de confidentialités</p></a>
                     </div>
                 </div>
 
-                <div class="accommodation">
-                    <div class="text5">
+                <div class="accommodation footerSection">
+                    <div class="textFooter">
                     <a href="en cours de construction"><h3>Nos hébergements</h3></a>
                     </div>
-                    <div class="text6">
+                    <div class="textFooter">
                     <a href="en cours de construction"><p>Charte qualité</p></a>
                     </div>
-                    <div class="text7">
+                    <div class="textFooter">
                     <a href="en cours de construction"><p>Soumettre votre hôtel</p></a>
                     </div>
                 </div>  
 
-                <div class="help">
-                    <div class="text8">
+                <div class="help footerSection">
+                    <div class="textFooter">
                     <a href="en cours de construction"><h3>Assistance</h3></a>
                     </div>
-                    <div class="text9">
+                    <div class="textFooter">
                     <a href="en cours de construction"><p>Centre d'aide</p></a>
                     </div>
-                    <div class="text10">
+                    <div class="textFooter">
                     <a href="en cours de construction"><p>Nous contacter</p></a>
                     </div>
                 </div>

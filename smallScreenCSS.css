@@ -1,3 +1,69 @@
 @media screen and (max-width: 767px) {
+
+    /* _______HEADER_______ */
     
+    .registerMenu {
+        width: 100px;
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .underline {
+        position: absolute;
+        top: 90px;
+        right: 20px;
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .navItem {
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+    }
+    .navItem > a {
+        color:#0065FC;
+    }
+    .navItem > a:hover {
+        color: #0065FC;
+    }
+    .navItem:hover {
+        transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        -webkit-transform: scale(1.05);
+        -o-transform: scale(1.05);
+        -moz-transform: scale(1.05);
+    }
+    .navItemUnderline1, .navItemUnderline2 {
+        font-weight: bold;
+        width: 50%;
+        text-align: center;
+        border-bottom: 2px solid #f2f2f2;
+    }
+    .navItemUnderline1 > a, .navItemUnderline2 > a {
+        color: black;
+    }
+    .navItemUnderline1 > a:hover, .navItemUnderline2 > a:hover {
+        color: #0065FC;
+    }
+    .navItemUnderline1:hover, .navItemUnderline2:hover{
+        border-bottom: 2px solid blue;
+        transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        -webkit-transform: scale(1.05);
+        -o-transform: scale(1.05);
+        -moz-transform: scale(1.05);
+    }
+    
+    /* ____________________ */
+
+
+    main {
+        display: none;
+    }
+
+    footer {
+        display: none;
+    }
 }

@@ -1,5 +1,10 @@
 @media screen and (max-width: 767px) {
 
+    .container {
+        max-width: 767px;
+        width: 100%;
+    }
+
     /* _______HEADER_______ */
     
     .registerMenu {
@@ -59,11 +64,365 @@
     /* ____________________ */
 
 
-    main {
-        display: none;
+    /* ________MAIN________ */
+
+    #block1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 1rem;
     }
 
-    footer {
+    .info {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+    }
+
+    .sub-info {
+        align-self: flex-start;
+        margin: 0;
+    }
+
+    /* ##### SearchBar ##### */
+    .searchBarZone {
+        margin: 1rem 0;
+    }
+    .navbarRight {
+        display: flex;
+        justify-content: center;
+    }
+    .inputGroup {
+        display: flex;
+        flex-direction: row;
+        margin-top: 1rem;
+        margin-bottom: 1rem; 
+    }
+    .btnHere {
+        width: 50px;
+        height: 40px;
+        color :black;
+        border-radius: 10px 0 0 10px;
+        border:none;
+    }
+    .btnHere:hover{
+        cursor:pointer;
+    }
+    .search {
+        width: 250px;
+    }
+    .formControl {
+        border-color: #F2F2F2;
+    }
+    .btnSearch {
+        width: 50px;
+        height: 40px;
+        background-color : #0065FC;
+        color: white;
+        border-radius : 0 10px 10px 0;
+        border:none;
+    }
+    .btnSearch:hover{
+        cursor:pointer;
+    }
+    .btnSearchZone {
         display: none;
     }
+    /* ################# */
+
+    /* ##### Filters ##### */
+    .filters {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .filters > a:hover {
+        text-decoration: none;
+    }
+    .filtersTitle {
+        align-self: flex-start;
+    }
+    .filtersTitle > h4 {
+        margin: 0;
+    }
+    .filtersItem {
+        display: flex;
+        align-items: center;
+        border-right: 2px solid #F2F2F2;
+        border-top: 2px solid #F2F2F2;
+        border-bottom: 2px solid #F2F2F2;
+        height: 40px;
+        padding-right: 10px;
+        margin: 0.5rem 0.5rem 0 0.5rem;
+        border-radius: 20px;
+        color : black;
+    }
+    .filtersItem:hover{
+        transform: scale(1.10);
+        -ms-transform: scale(1.10);
+        -webkit-transform: scale(1.10);
+        -o-transform: scale(1.10);
+        -moz-transform: scale(1.10);
+        
+    }
+    .filtersItemIcon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #DEEBFF;
+        color :#0065FC;
+        height: 100%;
+        width: 40px;
+        border-radius: 40px;
+        margin-right: 10px;
+    }
+    .filtersItemH3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        font-weight: bold;
+        font-size: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    /* ################### */
+
+    .information {
+        margin : 0 0 1rem 1rem; 
+    }
+    .fa-info {
+        width: 20px;
+        margin-right: 0.5rem;
+        color : #0065FC;
+        border : 1px grey solid;
+        border-radius: 18px;
+    }
+    .fa-info:before {
+        margin: 0.2rem 0 0.2rem 0.5rem;
+        font-size: 0.8rem;
+    }
+
+    /* ####### Hosting ####### */
+    #block2 {
+        display: flex;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+    .hosting {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0 1rem;
+    }
+    .hosting > a > h5 {
+        margin: 1rem 0 1rem 1.3rem;
+    }
+
+    .hostingTitle {
+        margin : 1rem 0 0 1.3rem;
+    }
+
+    .hostingItems {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .hostingCard {
+        border-radius: 20px;
+        height: 230px;
+        min-width: 250px;
+        width: 100%;
+        border-radius: 1rem;
+        background-color: white;
+        border: 2px solid #f2f2f2;
+        padding: 0.3rem;
+        margin-bottom: 1rem;
+    }
+
+    .hostingCardImg {
+        height: 60%;
+        width: 100%;
+        background-size: 105%;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 1rem;
+    }
+
+    .hostingCardBody {
+        height: calc(40% - 0.5rem);
+        margin: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .hostingCardBodyH5 {
+        margin: 0;
+        font-size: 100%;
+        font-weight: bold;
+        color: black;
+    }
+    .hostingCardBodyP {
+        font-size: 80%;
+        margin: 0;
+        color: black;
+    }
+
+    .showMore > a {
+        color: black;
+        font-size: 1.2rem;
+    }
+    /* ################### */
+
+    /* ####### Most popular ####### */
+    .mostPopular {
+        display: flex;
+        flex-direction: column;
+        background-color: #F2F2F2;
+        width: 100%;
+        padding:0 1rem;
+        margin-bottom: 1rem;
+    }
+    .mostPopularTitle {
+        display: flex;
+        justify-content: space-between;
+        margin: 1rem 1rem 0 1rem;
+    }
+    .mostPopularTitleIcon {
+        display: flex;
+        align-items: center
+    }
+    .fa-chart-line {
+        font-size: 1.5rem;
+    }
+
+    .mostPopularCardSection {
+        display: flex;
+        flex-direction: column;
+    }
+    .mostPopularCard {
+        display: flex;
+        flex-direction: row ;
+        height: 150px;
+        width: calc(100% - 4px - 0.6rem);
+        margin: 0 0 0.5rem 0;
+        padding: 0.3rem;
+        border-radius: 20px ;
+        background-color: white;
+        border: 2px solid #f2f2f2;
+    }
+    .mostPopularCard:hover {
+        transform: scale(1.02);
+        -ms-transform: scale(1.02);
+        -webkit-transform: scale(1.02);
+        -o-transform: scale(1.02);
+        -moz-transform: scale(1.02);
+    }
+    .mostPopularCardImg {
+        height: 100%;
+        width: 140px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 20px 0 0 20px;
+    }
+    .mostPopularCardBody {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin : 0.5rem;
+    }   
+    .mostPopularCardBodyTop > h5 {
+        font-size: 100%;
+        font-weight: bold;
+        color: black;
+    }
+    .mostPopularCardBodyTop > p {
+        font-size: 80%;
+        margin: 0;
+        color: black;
+    }
+    .mostPopularShowMore {
+        display: none
+    }
+    /* ################### */
+
+    /*######## Activités ######*/
+    #block3  {
+        width: calc(100% - 2rem);
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        padding:0 1rem;
+    }
+
+    .activitiesTitle {
+        /* margin : 1rem 0 1rem 1.3rem; */
+    }
+
+    .activitiesCardSection  {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .activitiesCardDuo{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width:100%;
+    }
+
+    .activitiesCard {
+        border-radius: 20px;
+        border: 1px #f2f2f2 solid;
+        box-shadow: 2px 2px 2px #f2f2f2;
+        margin-bottom: 1rem;
+        width: 100%;
+        height: 200px;
+    }
+    .activitiesCard > a {
+        color: black;
+        font-weight: bold;
+    }
+
+    .activitiesCardImg {
+        background-size: cover;
+        border-radius: 20px 20px 0 0;
+        background-position: center;
+        height: 75%;
+    }
+    /* ################### */
+
+    /* ____________________ */
+
+
+    /* _______FOOTER_______ */
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        background-color: #F2F2F2;
+        padding-top: 1rem;
+        padding-left: 2rem;
+    }
+
+    .textFooter > a {
+        color: black;
+    }
+    .textFooter > a:hover {
+        color : #0065FC;
+    }
+    .textFooter:hover {
+        transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        -webkit-transform: scale(1.05);
+        -o-transform: scale(1.05);
+        -moz-transform: scale(1.05);
+    }
+
+    /* _______________________ */
 }

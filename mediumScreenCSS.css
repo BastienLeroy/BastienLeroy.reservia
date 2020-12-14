@@ -1,5 +1,11 @@
 @media screen and (min-width: 768px) and (max-width: 1199px) {
 
+    .container {
+        padding: 0 1rem;
+        max-width: 1200px;
+        width: 100%;
+    }
+
     /* _______HEADER_______ */
 
     .registerMenu {
@@ -107,6 +113,9 @@
     .btnSearch:hover{
         cursor:pointer;
     }
+    .btnloupe {
+        display: none;
+    }
     /* ################# */
 
     /* ##### Filters ##### */
@@ -114,7 +123,7 @@
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        width: 750px;
+        width: 715px;
         margin-top: 1rem;
         margin-bottom: 1rem;
     }
@@ -490,5 +499,5 @@
         -moz-transform: scale(1.05);
     }
 
-    /* ################### */
+    /* _______________________ */
 }

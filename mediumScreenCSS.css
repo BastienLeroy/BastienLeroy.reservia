@@ -267,6 +267,10 @@
         margin: 0;
         color: black;
     }
+    .hostingCardBodyRating {
+        font-size: 0.7rem;
+        letter-spacing: -1px;
+    }
 
     .showMore {
         margin : 0 0 1rem 2rem;
@@ -366,6 +370,10 @@
         font-size: 80%;
         margin: 0;
         color: black;
+    }
+    .mostPopularCardRating {
+        font-size: 0.7rem;
+        letter-spacing: -1px;
     }
     .mostPopularShowMore {
         width: 23%;

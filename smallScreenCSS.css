@@ -159,14 +159,7 @@
         border-radius: 20px;
         color : black;
     }
-    .filtersItem:hover{
-        transform: scale(1.10);
-        -ms-transform: scale(1.10);
-        -webkit-transform: scale(1.10);
-        -o-transform: scale(1.10);
-        -moz-transform: scale(1.10);
-        
-    }
+    
     .filtersItemIcon {
         display: flex;
         justify-content: center;
@@ -315,13 +308,7 @@
         background-color: white;
         border: 2px solid #f2f2f2;
     }
-    .mostPopularCard:hover {
-        transform: scale(1.02);
-        -ms-transform: scale(1.02);
-        -webkit-transform: scale(1.02);
-        -o-transform: scale(1.02);
-        -moz-transform: scale(1.02);
-    }
+    
     .mostPopularCardImg {
         height: 100%;
         width: 140px;
@@ -416,13 +403,7 @@
     .textFooter > a:hover {
         color : #0065FC;
     }
-    .textFooter:hover {
-        transform: scale(1.05);
-        -ms-transform: scale(1.05);
-        -webkit-transform: scale(1.05);
-        -o-transform: scale(1.05);
-        -moz-transform: scale(1.05);
-    }
+    
 
     /* _______________________ */
 }

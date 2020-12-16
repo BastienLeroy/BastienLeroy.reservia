@@ -19,7 +19,7 @@
     .underline {
         margin-top: -2rem ;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         width: 100%;
     }
     .navItem {
@@ -39,7 +39,6 @@
         -moz-transform: scale(1.05);
     }
     .navItemUnderline1, .navItemUnderline2 {
-        font-weight: bold;
         padding-top: 2rem;
     }
     .navItemUnderline1 > a, .navItemUnderline2 > a {
@@ -80,7 +79,7 @@
         margin-bottom: 1rem; 
     }
     .btnHere {
-        width: 50px;
+        width: 40px;
         height: 40px;
         color :black;
         border-radius: 10px 0 0 10px;
@@ -262,10 +261,7 @@
         margin: 0;
         color: black;
     }
-    .hostingCardBodyRating {
-        font-size: 0.7rem;
-        letter-spacing: -1px;
-    }
+
 
     .showMore {
         margin : 0 2rem;
@@ -355,24 +351,10 @@
         width: 220px;
         padding : 0.5rem 1rem;
     }
-    .mostPopularCardBodyTop > h5 {
-        font-size: 100%;
-        font-weight: bold;
-        color: black;
-        margin: 0;
-    }
     .mostPopularCardBodyTop > p {
         font-size: 80%;
         margin: 0.5rem 0 0 0;
         color: black;
-    }
-    .mostPopularCardRating {
-        font-size: 0.7rem;
-        letter-spacing: -1px;
-    }
-
-    .mostPopularShowMore {
-        display: none;
     }
 
     /* ///////////////////// */
@@ -423,16 +405,20 @@
     .activitiesCardg1 {
         height: 600px;
         width: 23%;
+        box-shadow: 5px 5px 5px #F2F2F2;
     }
     .activitiesCardg2 {
         height: 290px;
         width: 100%;
+        box-shadow: 5px 5px 5px #F2F2F2;
     }
     .activitiesCardg3 {
         height: 380px;
+        box-shadow: 5px 5px 5px #F2F2F2;
     }
     .activitiesCardg4 {
         height: 200px;
+        box-shadow: 5px 5px 5px #F2F2F2;
     }
 
     .activitiesCardImg {
@@ -463,7 +449,7 @@
         display: flex;
         background-color: #F2F2F2;
         justify-content: space-between;
-        padding-top: 2rem;
+        padding-top: 0.5rem;
         padding-left: 1rem;
     }
 
@@ -474,18 +460,13 @@
     .textFooter {
         margin-top: 0.5rem;
     }
-    .textFooter > a {
-        color: black;
-    }
-    .textFooter > a:hover {
-        color : #0065FC;
-    }
+    
     .textFooter:hover {
-        transform: scale(1.05);
-        -ms-transform: scale(1.05);
-        -webkit-transform: scale(1.05);
-        -o-transform: scale(1.05);
-        -moz-transform: scale(1.05);
+        transform: scale(1.02);
+        -ms-transform: scale(1.02);
+        -webkit-transform: scale(1.02);
+        -o-transform: scale(1.02);
+        -moz-transform: scale(1.02);
     }
     /* ____________________ */
 }

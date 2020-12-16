@@ -5,6 +5,9 @@
         max-width: 1200px;
         width: 100%;
     }
+    h3 {
+        margin-bottom: 1rem;
+    }
 
     /* _______HEADER_______ */
 
@@ -71,6 +74,7 @@
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
+        margin-top: 1.5rem;
     }
 
     .info {
@@ -99,7 +103,7 @@
     .search {
         width: 250px;
     }
-    .formControl {
+    .searchBarZoneFormInput {
         border-color: #F2F2F2;
     }
     .btnSearch {
@@ -116,6 +120,7 @@
     .btnloupe {
         display: none;
     }
+    
     /* ################# */
 
     /* ##### Filters ##### */
@@ -123,7 +128,8 @@
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        width: 715px;
+        align-items: center;
+        width: 768px;
         margin-top: 1rem;
         margin-bottom: 1rem;
     }
@@ -133,6 +139,12 @@
     .filters > a:hover {
         text-decoration: none;
     }
+    .filtersTitle >h4 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     .filtersItem {
         display: flex;
         align-items: center;
@@ -217,7 +229,7 @@
     .hostingItems {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: space-evenly;
         width: 100%;
     }
 
@@ -246,7 +258,7 @@
         background-size: 105%;
         background-repeat: no-repeat;
         background-position: center;
-        border-radius: 1rem;
+        border-radius: 1rem 1rem 0 0;
     }
 
     .hostingCardBody {
@@ -266,10 +278,6 @@
         font-size: 80%;
         margin: 0;
         color: black;
-    }
-    .hostingCardBodyRating {
-        font-size: 0.7rem;
-        letter-spacing: -1px;
     }
 
     .showMore {
@@ -297,7 +305,6 @@
         display: flex;
         flex-direction: column;
         background-color: #F2F2F2;
-
         width: 95%;
         border-radius: 20px;
         padding-bottom:2rem;
@@ -316,25 +323,21 @@
         font-size: 1.5rem;
     }
 
-    .mostPopularCardList {
-        display: flex;
-        justify-content: space-between;
-    }
     .mostPopularCardSection {
         display: flex;
         flex-direction: column;
-        width: 70%;
+        justify-content: space-evenly;
+        width: 100%;
     }
     .mostPopularCard {
         display: flex;
         flex-direction: row ;
         height: 150px;
-        width: 100%;
-        margin: 0 0 0.5rem 1rem;
-        padding: 0.3rem;
+        width: 90%;
         border-radius: 20px ;
         background-color: white;
         border: 2px solid #f2f2f2;
+        margin-bottom: 0.5rem !important;
     }
     .mostPopularCard:last-child {
         margin: 0 0 0 1rem;
@@ -358,44 +361,16 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        width: 220px;
-        margin : 0.5rem;
-    }   
-    .mostPopularCardBodyTop > h5 {
-        font-size: 100%;
-        font-weight: bold;
-        color: black;
+        width: 50%;
+        padding : 0.5rem 1rem;
     }
     .mostPopularCardBodyTop > p {
         font-size: 80%;
         margin: 0;
         color: black;
     }
-    .mostPopularCardRating {
-        font-size: 0.7rem;
-        letter-spacing: -1px;
-    }
-    .mostPopularShowMore {
-        width: 23%;
-        height: 100%;
-        background-color: white;
-        margin-right: 1rem;
-        border-radius: 20px;
-        }
-    .mostPopularShowMore:hover {
-        transform: scale(1.02);
-        -ms-transform: scale(1.02);
-        -webkit-transform: scale(1.02);
-        -o-transform: scale(1.02);
-        -moz-transform: scale(1.02);
-    }
-    .mostPopularShowMore > a {
-        color: black;
-        font-size: 2rem;
-    }
-    .mostPopularShowMore > a:hover {
-        color : #0065FC;
-    }
+    
+    
     /* ################### */
 
     /*######## Activités ######*/

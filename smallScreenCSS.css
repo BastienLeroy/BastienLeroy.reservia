@@ -4,6 +4,9 @@
         max-width: 767px;
         width: 100%;
     }
+    h3 {
+        margin-bottom: 1rem;
+    }
 
     /* _______HEADER_______ */
     
@@ -16,7 +19,7 @@
     .underline {
         position: absolute;
         top: 90px;
-        right: 20px;
+        right: 0;
         display: flex;
         justify-content: space-around;
         width: 100%;
@@ -71,6 +74,7 @@
         flex-direction: column;
         align-items: center;
         padding: 0 1rem;
+        margin-top: 2rem;
     }
 
     .info {
@@ -88,18 +92,19 @@
     .searchBarZone {
         margin: 1rem 0;
     }
-    .navbarRight {
+    .searchBarZoneForm {
         display: flex;
         justify-content: center;
     }
     .inputGroup {
+        position: relative;
         display: flex;
         flex-direction: row;
         margin-top: 1rem;
         margin-bottom: 1rem; 
     }
     .btnHere {
-        width: 50px;
+        width: 40px;
         height: 40px;
         color :black;
         border-radius: 10px 0 0 10px;
@@ -111,15 +116,21 @@
     .search {
         width: 250px;
     }
-    .formControl {
-        border-color: #F2F2F2;
+    .searchBarZoneFormInput {
+        width: 250px;
+    }
+    .input-group-btn {
+        position: absolute;
+        right: -10px;
+
+
     }
     .btnSearch {
-        width: 50px;
+        width: 40px;
         height: 40px;
         background-color : #0065FC;
         color: white;
-        border-radius : 0 10px 10px 0;
+        border-radius : 10px 10px 10px 10px;
         border:none;
     }
     .btnSearch:hover{
@@ -143,6 +154,8 @@
     }
     .filtersTitle {
         align-self: flex-start;
+        width: 100%;
+        padding-left: 0.6rem;
     }
     .filtersTitle > h4 {
         margin: 0;
@@ -227,7 +240,6 @@
 
     .hostingCard {
         border-radius: 20px;
-        height: 230px;
         min-width: 250px;
         width: 100%;
         border-radius: 1rem;
@@ -238,7 +250,7 @@
     }
 
     .hostingCardImg {
-        height: 60%;
+        height: 138px;
         width: 100%;
         background-size: 105%;
         background-repeat: no-repeat;
@@ -247,8 +259,7 @@
     }
 
     .hostingCardBody {
-        height: calc(40% - 0.5rem);
-        margin: 0.5rem;
+        padding : 0.5rem 1rem;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -312,6 +323,7 @@
     .mostPopularCardImg {
         height: 100%;
         width: 140px;
+        min-width: 140px;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -321,7 +333,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        margin : 0.5rem;
+        padding : 0.5rem 1rem;
     }   
     .mostPopularCardBodyTop > h5 {
         font-size: 100%;

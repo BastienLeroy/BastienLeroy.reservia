@@ -1,7 +1,8 @@
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
 
     .container {
-        max-width: 767px;
+        padding: 0 1rem;
+        max-width: 1200px;
         width: 100%;
     }
     h3 {
@@ -9,7 +10,7 @@
     }
 
     /* _______HEADER_______ */
-    
+
     .registerMenu {
         width: 100px;
         height: 50px;
@@ -19,7 +20,7 @@
     .underline {
         position: absolute;
         top: 90px;
-        right: 0;
+        right: 20px;
         display: flex;
         justify-content: space-around;
         width: 100%;
@@ -44,7 +45,6 @@
         -moz-transform: scale(1.05);
     }
     .navItemUnderline1, .navItemUnderline2 {
-        font-weight: bold;
         width: 50%;
         text-align: center;
         border-bottom: 2px solid #f2f2f2;
@@ -72,39 +72,25 @@
     #block1 {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        padding: 0 1rem;
-        margin-top: 2rem;
+        flex-wrap: wrap;
+        margin-top: 1.5rem;
     }
 
     .info {
-        font-size: 1.5rem;
-        font-weight: bold;
-        margin-bottom: 0.5rem;
-    }
-
-    .sub-info {
-        align-self: flex-start;
-        margin: 0;
+        font-size: x-large ;
+        text-align: justify;
     }
 
     /* ##### SearchBar ##### */
-    .searchBarZone {
-        margin: 1rem 0;
-    }
-    .searchBarZoneForm {
-        display: flex;
-        justify-content: center;
-    }
     .inputGroup {
-        position: relative;
         display: flex;
         flex-direction: row;
+        width: 350px;
         margin-top: 1rem;
         margin-bottom: 1rem; 
     }
     .btnHere {
-        width: 40px;
+        width: 50px;
         height: 40px;
         color :black;
         border-radius: 10px 0 0 10px;
@@ -117,49 +103,47 @@
         width: 250px;
     }
     .searchBarZoneFormInput {
-        width: 250px;
-    }
-    .input-group-btn {
-        position: absolute;
-        right: -10px;
-
-
+        border-color: #F2F2F2;
     }
     .btnSearch {
-        width: 40px;
+        width: 100px;
         height: 40px;
         background-color : #0065FC;
         color: white;
-        border-radius : 10px 10px 10px 10px;
+        border-radius : 0 10px 10px 0;
         border:none;
     }
     .btnSearch:hover{
         cursor:pointer;
     }
-    .btnSearchZone {
+    .btnloupe {
         display: none;
     }
+    
     /* ################# */
 
     /* ##### Filters ##### */
     .filters {
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        width: 768px;
         margin-top: 1rem;
         margin-bottom: 1rem;
+    }
+    .filters > h4 {
+        margin-top : 0.7rem
     }
     .filters > a:hover {
         text-decoration: none;
     }
-    .filtersTitle {
-        align-self: flex-start;
-        width: 100%;
-        padding-left: 0.6rem;
+    .filtersTitle >h4 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
-    .filtersTitle > h4 {
-        margin: 0;
-    }
+
     .filtersItem {
         display: flex;
         align-items: center;
@@ -168,22 +152,19 @@
         border-bottom: 2px solid #F2F2F2;
         height: 40px;
         padding-right: 10px;
-        margin: 0.5rem 0.5rem 0 0.5rem;
         border-radius: 20px;
         color : black;
+        
+    }
+    .filtersItem:hover{
+        transform: scale(1.10);
+        -ms-transform: scale(1.10);
+        -webkit-transform: scale(1.10);
+        -o-transform: scale(1.10);
+        -moz-transform: scale(1.10);
+        
     }
     
-    .filtersItemIcon {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #DEEBFF;
-        color :#0065FC;
-        height: 100%;
-        width: 40px;
-        border-radius: 40px;
-        margin-right: 10px;
-    }
     .filtersItemH3 {
         display: flex;
         justify-content: center;
@@ -211,17 +192,20 @@
         font-size: 0.8rem;
     }
 
+
     /* ####### Hosting ####### */
     #block2 {
         display: flex;
         flex-wrap: wrap-reverse;
-        justify-content: center;
+        justify-content: space-around;
     }
     .hosting {
         display: flex;
+        flex-wrap: wrap;
         flex-direction: column;
-        width: 100%;
-        padding: 0 1rem;
+        width: 95%;
+        background-color: #F2F2F2;
+        border-radius: 20px
     }
     .hosting > a > h5 {
         margin: 1rem 0 1rem 1.3rem;
@@ -234,32 +218,41 @@
     .hostingItems {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: space-evenly;
         width: 100%;
     }
 
     .hostingCard {
         border-radius: 20px;
+        height: 230px;
         min-width: 250px;
-        width: 100%;
+        width: 35%;
         border-radius: 1rem;
         background-color: white;
         border: 2px solid #f2f2f2;
         padding: 0.3rem;
         margin-bottom: 1rem;
     }
+    .hostingCard:hover {
+        transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        -webkit-transform: scale(1.05);
+        -o-transform: scale(1.05);
+        -moz-transform: scale(1.05);
+    }
 
     .hostingCardImg {
-        height: 138px;
+        height: 60%;
         width: 100%;
         background-size: 105%;
         background-repeat: no-repeat;
         background-position: center;
-        border-radius: 1rem;
+        border-radius: 1rem 1rem 0 0;
     }
 
     .hostingCardBody {
-        padding : 0.5rem 1rem;
+        height: calc(40% - 0.5rem);
+        margin: 0.5rem;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -276,9 +269,23 @@
         color: black;
     }
 
+    .showMore {
+        margin : 0 0 1rem 2rem;
+        width: 120px;
+    }
     .showMore > a {
         color: black;
         font-size: 1.2rem;
+    }
+    .showMore > a:hover {
+        color : #0065FC;
+    }
+    .showMore:hover {
+        transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        -webkit-transform: scale(1.05);
+        -o-transform: scale(1.05);
+        -moz-transform: scale(1.05);
     }
     /* ################### */
 
@@ -287,8 +294,9 @@
         display: flex;
         flex-direction: column;
         background-color: #F2F2F2;
-        width: 100%;
-        padding:0 1rem;
+        width: 95%;
+        border-radius: 20px;
+        padding-bottom:2rem;
         margin-bottom: 1rem;
     }
     .mostPopularTitle {
@@ -307,23 +315,32 @@
     .mostPopularCardSection {
         display: flex;
         flex-direction: column;
+        justify-content: space-evenly;
+        width: 100%;
     }
     .mostPopularCard {
         display: flex;
         flex-direction: row ;
         height: 150px;
-        width: calc(100% - 4px - 0.6rem);
-        margin: 0 0 0.5rem 0;
-        padding: 0.3rem;
+        width: 90%;
         border-radius: 20px ;
         background-color: white;
         border: 2px solid #f2f2f2;
+        margin-bottom: 0.5rem !important;
     }
-    
+    .mostPopularCard:last-child {
+        margin: 0 0 0 1rem;
+    }
+    .mostPopularCard:hover {
+        transform: scale(1.02);
+        -ms-transform: scale(1.02);
+        -webkit-transform: scale(1.02);
+        -o-transform: scale(1.02);
+        -moz-transform: scale(1.02);
+    }
     .mostPopularCardImg {
         height: 100%;
         width: 140px;
-        min-width: 140px;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -333,38 +350,33 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        width: 50%;
         padding : 0.5rem 1rem;
-    }   
-    .mostPopularCardBodyTop > h5 {
-        font-size: 100%;
-        font-weight: bold;
-        color: black;
     }
     .mostPopularCardBodyTop > p {
         font-size: 80%;
         margin: 0;
         color: black;
     }
-    .mostPopularShowMore {
-        display: none
-    }
+    
+    
     /* ################### */
 
     /*######## Activités ######*/
     #block3  {
-        width: calc(100% - 2rem);
+        width: 100%;
         margin-top: 2rem;
         margin-bottom: 2rem;
-        padding:0 1rem;
     }
 
     .activitiesTitle {
-        /* margin : 1rem 0 1rem 1.3rem; */
+        margin : 1rem 0 1rem 1.3rem;
     }
 
     .activitiesCardSection  {
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
         width: 100%;
     }
 
@@ -372,50 +384,92 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        width:100%;
+        width:40%;
     }
 
     .activitiesCard {
+        order: 1;
         border-radius: 20px;
         border: 1px #f2f2f2 solid;
         box-shadow: 2px 2px 2px #f2f2f2;
         margin-bottom: 1rem;
-        width: 100%;
-        height: 200px;
     }
     .activitiesCard > a {
         color: black;
         font-weight: bold;
+    }
+    .activitiesCard:hover {
+        transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        -webkit-transform: scale(1.05);
+        -o-transform: scale(1.05);
+        -moz-transform: scale(1.05);
+    }
+    .activitiesCardg1 {
+        height: 250px;
+        width: 40%;
+    }
+    .activitiesCardg2 {
+        height: 290px;
+        width: 100%;
+    }
+    .activitiesCardg3 {
+        height: 380px;
+    }
+    .activitiesCardg4 {
+        height: 200px;
     }
 
     .activitiesCardImg {
         background-size: cover;
         border-radius: 20px 20px 0 0;
         background-position: center;
-        height: 75%;
+    }
+    .activitiesCardImg1 {
+        height: 210px;
+    }
+    .activitiesCardImg2{
+        height: 250px;
+    }
+    .activitiesCardImg3 {
+        height: 340px;
+    }
+    .activitiesCardImg4 {
+        height: 160px;
     }
     /* ################### */
-
-    /* ____________________ */
-
 
     /* _______FOOTER_______ */
 
     footer {
+        height: 180px;
         display: flex;
-        flex-direction: column;
         background-color: #F2F2F2;
-        padding-top: 1rem;
-        padding-left: 2rem;
+        justify-content: space-between;
+        padding-top: 2rem;
+        padding-left: 1rem;
     }
 
+    .footerSection {
+        width: 32%;
+    }
+
+    .textFooter {
+        margin-top: 0.5rem;
+    }
     .textFooter > a {
         color: black;
     }
     .textFooter > a:hover {
         color : #0065FC;
     }
-    
+    .textFooter:hover {
+        transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        -webkit-transform: scale(1.05);
+        -o-transform: scale(1.05);
+        -moz-transform: scale(1.05);
+    }
 
     /* _______________________ */
 }

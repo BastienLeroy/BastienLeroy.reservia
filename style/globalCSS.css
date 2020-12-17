@@ -2,7 +2,7 @@
     font-family: "Raleway", sans-serif;
     src:
         url(Fonts/Raleway-VariableFont_wght.ttf)
-        url(Fonts/Raleway-Italic-VariableFont_wght.ttf)
+        
 }
 
 body {
@@ -25,8 +25,8 @@ a:link
 .fa-star {
     color:#0065FC;
 }
-.fa-star0 {
-    color: #413939;
+.fas0 {
+    color: #c0c0c0;
 }
 .card-body {
     margin: -0.5rem 0 1.5rem 1rem;
@@ -61,12 +61,36 @@ a:link
 .p {
     font-size: small;
 }
+
+
+
 .searchBarZoneFormInput {
     border-color: #F2F2F2;
     border-top : 1px #F2F2F2 solid;
     border-right: none;
     border-left: none;
 }
+
+.fa-info-circle {
+    background-color: #0065FC ;
+    color: white;
+    border: 1px grey solid;
+    border-radius: 55%;
+  
+}
+
+.filtersItemIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #DEEBFF;
+    color :#0065FC;
+    height: 105%;
+    width: 42px;
+    border-radius: 40px;
+    margin-right: 10px;
+}
+
 /* ____________________ */
 
 .hostingCardBodyRating {

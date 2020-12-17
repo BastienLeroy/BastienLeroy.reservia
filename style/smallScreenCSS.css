@@ -9,6 +9,10 @@
     }
 
     /* _______HEADER_______ */
+
+    .logo {
+        margin-left: 1rem;
+    }
     
     .registerMenu {
         width: 100px;
@@ -26,42 +30,18 @@
     }
 
     .navItem {
-        font-weight: bold;
         display: flex;
         align-items: center;
     }
-    .navItem > a {
-        color:#0065FC;
-    }
-    .navItem > a:hover {
-        color: #0065FC;
-    }
-    .navItem:hover {
-        transform: scale(1.05);
-        -ms-transform: scale(1.05);
-        -webkit-transform: scale(1.05);
-        -o-transform: scale(1.05);
-        -moz-transform: scale(1.05);
-    }
+
     .navItemUnderline1, .navItemUnderline2 {
-       
         width: 50%;
         text-align: center;
         border-bottom: 2px solid #f2f2f2;
     }
-    .navItemUnderline1 > a, .navItemUnderline2 > a {
-        color: black;
-    }
-    .navItemUnderline1 > a:hover, .navItemUnderline2 > a:hover {
-        color: #0065FC;
-    }
+
     .navItemUnderline1:hover, .navItemUnderline2:hover{
         border-bottom: 2px solid blue;
-        transform: scale(1.05);
-        -ms-transform: scale(1.05);
-        -webkit-transform: scale(1.05);
-        -o-transform: scale(1.05);
-        -moz-transform: scale(1.05);
     }
     
     /* ____________________ */
@@ -70,8 +50,6 @@
     /* ________MAIN________ */
 
     #block1 {
-        display: flex;
-        flex-direction: column;
         align-items: center;
         padding: 0 1rem;
         margin-top: 2rem;
@@ -87,55 +65,35 @@
         align-self: flex-start;
         margin: 0;
     }
-
+    
     /* ##### SearchBar ##### */
     .searchBarZone {
         margin: 1rem 0;
     }
+
     .searchBarZoneForm {
         display: flex;
         justify-content: center;
     }
+
     .inputGroup {
         position: relative;
-        display: flex;
-        flex-direction: row;
-        margin-top: 1rem;
-        margin-bottom: 1rem; 
     }
-    .btnHere {
-        width: 40px;
-        height: 40px;
-        color :black;
-        border-radius: 10px 0 0 10px;
-        border:none;
-    }
-    .btnHere:hover{
-        cursor:pointer;
-    }
-    .search {
-        width: 250px;
-    }
+
     .searchBarZoneFormInput {
         width: 250px;
     }
+
     .input-group-btn {
         position: absolute;
         right: -10px;
-
-
     }
+
     .btnSearch {
         width: 40px;
-        height: 40px;
-        background-color : #0065FC;
-        color: white;
         border-radius : 10px 10px 10px 10px;
-        border:none;
     }
-    .btnSearch:hover{
-        cursor:pointer;
-    }
+    
     .btnSearchZone {
         display: none;
     }
@@ -143,15 +101,9 @@
 
     /* ##### Filters ##### */
     .filters {
-        display: flex;
-        flex-direction: row;
         flex-wrap: wrap;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
     }
-    .filters > a:hover {
-        text-decoration: none;
-    }
+    
     .filtersTitle {
         align-self: flex-start;
         width: 100%;
@@ -161,45 +113,10 @@
         margin: 0;
     }
     .filtersItem {
-        display: flex;
-        align-items: center;
-        border-right: 2px solid #F2F2F2;
-        border-top: 2px solid #F2F2F2;
-        border-bottom: 2px solid #F2F2F2;
-        height: 40px;
-        padding-right: 10px;
         margin: 0.5rem 0.5rem 0 0.5rem;
-        border-radius: 20px;
-        color : black;
-    }
-    
-    
-    .filtersItemH3 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-        font-weight: bold;
-        font-size: 100%;
-        margin: 0;
-        padding: 0;
     }
     /* ################### */
 
-    .information {
-        margin : 0 0 1rem 1rem; 
-    }
-    .fa-info {
-        width: 20px;
-        margin-right: 0.5rem;
-        color : #0065FC;
-        border : 1px grey solid;
-        border-radius: 18px;
-    }
-    .fa-info:before {
-        margin: 0.2rem 0 0.2rem 0.5rem;
-        font-size: 0.8rem;
-    }
 
     /* ####### Hosting ####### */
     #block2 {
@@ -208,8 +125,6 @@
         justify-content: center;
     }
     .hosting {
-        display: flex;
-        flex-direction: column;
         width: 100%;
         padding: 0rem 1rem;
     }
@@ -217,24 +132,9 @@
         margin: 1rem 0 1rem 1.3rem;
     }
 
-    .hostingTitle {
-        margin : 1rem 0 0 1.3rem;
-    }
-
-    .hostingItems {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        width: 100%;
-    }
-
     .hostingCard {
-        border-radius: 20px;
         min-width: 250px;
         width: 100%;
-        border-radius: 1rem;
-        background-color: white;
-        border: 2px solid #f2f2f2;
         padding: 0.3rem;
         margin-bottom: 1rem;
         box-shadow: 2px 2px 5px #f2f2f2;
@@ -289,7 +189,7 @@
     }
     .mostPopularTitleIcon {
         display: flex;
-        align-items: center
+        align-items: flex-start
     }
     .fa-chart-line {
         font-size: 1.5rem;

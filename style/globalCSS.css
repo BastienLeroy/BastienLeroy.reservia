@@ -35,6 +35,12 @@ a:link
 
 /* _______HEADER_______ */
 
+.logo {
+    height: 50px;
+}
+.logoImg {
+    height: 50px;
+}
 .navBar {
     display: flex;
     justify-content: space-between;
@@ -42,27 +48,151 @@ a:link
     width: 100%;
     height: 100px;
 }
-.logo {
-    height: 50px;
+.navItem {
+    font-weight: bold;
 }
-.logoImg {
-    height: 50px;
-    position: absolute;
-    left : 20px
+.navItem > a {
+    color:#0065FC;
 }
+.navItem > a:hover {
+    color: #0065FC;
+}
+.navItem:hover {
+    transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+}
+.navItemUnderline1 > a, .navItemUnderline2 > a {
+    color: black;
+}
+.navItemUnderline1 > a:hover, .navItemUnderline2 > a:hover {
+    color: #0065FC;
+}
+.navItemUnderline1:hover, .navItemUnderline2:hover{
+    transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+}
+
+/* ____________________ */
+
+
+/* ________MAIN________ */
+
+#block1 {
+    display: flex;
+    flex-direction: column;
+}
+
 .info {
     font-weight: bold;
     margin:0;
     font-size: 1.5rem;
 }
+
 .sub-info{
     margin :0;
 }
-.p {
-    font-size: small;
+
+/* ##### SearchBar ##### */
+.inputGroup {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+    margin-bottom: 1rem; 
+}
+
+.btnHere {
+    width: 40px;
+    height: 40px;
+    color :black;
+    border-radius: 10px 0 0 10px;
+    border:none;
+}
+.btnHere:hover{
+    cursor:pointer;
+}
+
+.search {
+    width: 250px;
+}
+
+.btnSearch {
+    height: 40px;
+    background-color: #0065FC;
+    color: white;
+    border: none;
+}
+.btnSearch:hover{
+    cursor:pointer;
+}
+/* ################# */
+
+/* ##### Filters ##### */
+.filters {
+    display: flex;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.filtersItem {
+    display: flex;
+    align-items: center;
+    border-right: 2px solid #F2F2F2;
+    border-top: 2px solid #F2F2F2;
+    border-bottom: 2px solid #F2F2F2;
+    height: 40px;
+    padding-right: 10px;
+    border-radius: 20px;
+    color : black;
+}
+.filtersItem:hover{
+    transform: scale(1.10);
+    -ms-transform: scale(1.10);
+    -webkit-transform: scale(1.10);
+    -o-transform: scale(1.10);
+    -moz-transform: scale(1.10);
+}
+/* ################# */
+
+.information {
+    margin : 0 0 1rem 1rem; 
 }
 
 
+/* ####### Hosting ####### */
+.hosting {
+    display: flex;
+    flex-direction: column;
+}
+
+.hostingTitle {
+    margin : 1rem 0 0 1.3rem;
+}
+
+.hostingItems {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.hostingCard {
+    border-radius: 1rem;
+    background-color: white;
+    border: 2px solid #f2f2f2;
+}
+.hostingCard:hover {
+    transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+}
 
 .searchBarZoneFormInput {
     border-color: #F2F2F2;
@@ -72,11 +202,10 @@ a:link
 }
 
 .fa-info-circle {
-    background-color: #0065FC ;
+    background: radial-gradient(#0065FC 2px, white 100%);
     color: white;
     border: 1px grey solid;
     border-radius: 55%;
-  
 }
 
 .filtersItemIcon {
@@ -89,6 +218,19 @@ a:link
     width: 42px;
     border-radius: 40px;
     margin-right: 10px;
+}
+.filters > a:hover {
+    text-decoration: none;
+}
+.filtersItemH3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-weight: bold;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 /* ____________________ */

@@ -2,7 +2,7 @@
 
     .container {
         padding: 0 1rem;
-        max-width: 1200px;
+        max-width: 1199px;
         width: 100%;
     }
     h3 {
@@ -27,41 +27,18 @@
     }
 
     .navItem {
-        font-weight: bold;
         display: flex;
         align-items: center;
     }
-    .navItem > a {
-        color:#0065FC;
-    }
-    .navItem > a:hover {
-        color: #0065FC;
-    }
-    .navItem:hover {
-        transform: scale(1.05);
-        -ms-transform: scale(1.05);
-        -webkit-transform: scale(1.05);
-        -o-transform: scale(1.05);
-        -moz-transform: scale(1.05);
-    }
+
     .navItemUnderline1, .navItemUnderline2 {
         width: 50%;
         text-align: center;
         border-bottom: 2px solid #f2f2f2;
     }
-    .navItemUnderline1 > a, .navItemUnderline2 > a {
-        color: black;
-    }
-    .navItemUnderline1 > a:hover, .navItemUnderline2 > a:hover {
-        color: #0065FC;
-    }
+
     .navItemUnderline1:hover, .navItemUnderline2:hover{
         border-bottom: 2px solid blue;
-        transform: scale(1.05);
-        -ms-transform: scale(1.05);
-        -webkit-transform: scale(1.05);
-        -o-transform: scale(1.05);
-        -moz-transform: scale(1.05);
     }
     
     /* ____________________ */
@@ -70,8 +47,6 @@
     /* ________MAIN________ */
 
     #block1 {
-        display: flex;
-        flex-direction: column;
         flex-wrap: wrap;
         margin-top: 1.5rem;
     }
@@ -83,114 +58,38 @@
 
     /* ##### SearchBar ##### */
     .inputGroup {
-        display: flex;
-        flex-direction: row;
         width: 350px;
-        margin-top: 1rem;
-        margin-bottom: 1rem; 
     }
-    .btnHere {
-        width: 50px;
-        height: 40px;
-        color :black;
-        border-radius: 10px 0 0 10px;
-        border:none;
-    }
-    .btnHere:hover{
-        cursor:pointer;
-    }
-    .search {
-        width: 250px;
-    }
+
     .searchBarZoneFormInput {
         border-color: #F2F2F2;
     }
     .btnSearch {
         width: 100px;
-        height: 40px;
-        background-color : #0065FC;
-        color: white;
         border-radius : 0 10px 10px 0;
-        border:none;
     }
-    .btnSearch:hover{
-        cursor:pointer;
-    }
+    
     .btnloupe {
         display: none;
     }
-    
     /* ################# */
 
     /* ##### Filters ##### */
     .filters {
-        display: flex;
-        flex-direction: row;
         justify-content: space-around;
         align-items: center;
-        width: 768px;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
+        width: 720px;
     }
     .filters > h4 {
         margin-top : 0.7rem
     }
-    .filters > a:hover {
-        text-decoration: none;
-    }
-    .filtersTitle >h4 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .filtersItem {
-        display: flex;
-        align-items: center;
-        border-right: 2px solid #F2F2F2;
-        border-top: 2px solid #F2F2F2;
-        border-bottom: 2px solid #F2F2F2;
-        height: 40px;
-        padding-right: 10px;
-        border-radius: 20px;
-        color : black;
-        
-    }
-    .filtersItem:hover{
-        transform: scale(1.10);
-        -ms-transform: scale(1.10);
-        -webkit-transform: scale(1.10);
-        -o-transform: scale(1.10);
-        -moz-transform: scale(1.10);
-        
-    }
     
-    .filtersItemH3 {
+    .filtersTitle > h4 {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 100%;
-        font-weight: bold;
-        font-size: 100%;
-        margin: 0;
-        padding: 0;
     }
     /* ################### */
-
-    .information {
-        margin : 0 0 1rem 1rem; 
-    }
-    .fa-info {
-        width: 20px;
-        margin-right: 0.5rem;
-        color : #0065FC;
-        border : 1px grey solid;
-        border-radius: 18px;
-    }
-    .fa-info:before {
-        margin: 0.2rem 0 0.2rem 0.5rem;
-        font-size: 0.8rem;
-    }
 
 
     /* ####### Hosting ####### */
@@ -200,9 +99,7 @@
         justify-content: space-around;
     }
     .hosting {
-        display: flex;
         flex-wrap: wrap;
-        flex-direction: column;
         width: 95%;
         background-color: #F2F2F2;
         border-radius: 20px
@@ -211,35 +108,14 @@
         margin: 1rem 0 1rem 1.3rem;
     }
 
-    .hostingTitle {
-        margin : 1rem 0 0 1.3rem;
-    }
-
-    .hostingItems {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        width: 100%;
-    }
-
     .hostingCard {
-        border-radius: 20px;
         height: 230px;
         min-width: 250px;
         width: 35%;
-        border-radius: 1rem;
-        background-color: white;
-        border: 2px solid #f2f2f2;
         padding: 0.3rem;
         margin-bottom: 1rem;
     }
-    .hostingCard:hover {
-        transform: scale(1.05);
-        -ms-transform: scale(1.05);
-        -webkit-transform: scale(1.05);
-        -o-transform: scale(1.05);
-        -moz-transform: scale(1.05);
-    }
+
 
     .hostingCardImg {
         height: 60%;

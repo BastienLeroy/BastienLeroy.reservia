@@ -33,7 +33,7 @@ a:link
 }
 
 
-/* _______HEADER_______ */
+/* ######HEADER###### */
 
 .logo {
     height: 50px;
@@ -78,14 +78,15 @@ a:link
     -moz-transform: scale(1.05);
 }
 
-/* ____________________ */
+/* ################ */
 
 
-/* ________MAIN________ */
+/* ######MAIN###### */
 
 #block1 {
     display: flex;
     flex-direction: column;
+    padding-left: 1rem;
 }
 
 .info {
@@ -119,6 +120,11 @@ a:link
 
 .search {
     width: 250px;
+    
+}
+.searchBarZoneFormInput{
+    font-weight: bold;
+    font-family: 'Raleway';
 }
 
 .btnSearch {
@@ -160,7 +166,7 @@ a:link
 /* ################# */
 
 .information {
-    margin : 0 0 1rem 1rem; 
+    margin : 0 0 1rem 0; 
 }
 
 
@@ -202,7 +208,11 @@ a:link
 }
 
 .fa-info-circle {
-    background: radial-gradient(#0065FC 2px, white 100%);
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#0065fc+44,1e5799+47,7db9e8+47,1e5799+47&0.7+0,1+0,1+47,0+49 */
+    background: -moz-radial-gradient(center, ellipse cover,  rgba(0,101,252,1) 0%, rgba(0,101,252,1) 44%, rgba(30,87,153,1) 47%, rgba(30,87,153,0) 49%); /* FF3.6-15 */
+    background: -webkit-radial-gradient(center, ellipse cover,  rgba(0,101,252,1) 0%,rgba(0,101,252,1) 44%,rgba(30,87,153,1) 47%,rgba(30,87,153,0) 49%); /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(ellipse at center,  rgba(0,101,252,1) 0%,rgba(0,101,252,1) 44%,rgba(30,87,153,1) 47%,rgba(30,87,153,0) 49%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0065fc', endColorstr='#001e5799',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
     color: white;
     border: 1px grey solid;
     border-radius: 55%;
@@ -239,7 +249,75 @@ a:link
     font-size: 0.7rem;
     letter-spacing: -1px;
 }
+.hostingCardImg{
+    width: 100%;
+    background-size: 105%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.hostingCardBody {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.hostingCardBodyH5 {
+    margin: 0;
+    font-size: 100%;
+    font-weight: bold;
+    color: black;
+}
+.hostingCardBodyP {
+    font-size: 80%;
+    margin: 0;
+    color: black;
+}
+.showMore > a {
+    color: black;
+    font-size: 1.2rem;
+}
 
+/* ####### Most popular ####### */
+
+.mostPopular{
+    display: flex;
+    flex-direction: column;
+    background-color: #F2F2F2;
+}
+.mostPopularTitle {
+    display: flex;
+    justify-content: space-between;
+}
+.mostPopularTitleIcon {
+    display: flex;
+}
+.fa-chart-line {
+    font-size: 1.5rem;
+}
+.mostPopularCard {
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px ;
+    background-color: white;
+    border: 2px solid #f2f2f2;
+}
+.mostPopularCardImg {
+    height: 100%;
+    width: 140px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20px 0 0 20px;
+}
+.mostPopularCardBody {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding : 0.5rem 1rem;
+}
+.mostPopularCardBodyTop > p {
+    font-size: 80%;
+    color: black;
+}
 .mostPopularCardRating {
     font-size: 0.7rem;
     letter-spacing: -1px;
@@ -251,6 +329,53 @@ a:link
     margin: 0 0 0.3rem 0;
 }
 
+/* ################### */
+
+/*######## Activités ######*/
+
+#block3  {
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.activitiesCardSection {
+    display: flex;
+    width: 100%;
+}
+.activitiesCardDuo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.activitiesCard {
+    border-radius: 20px;
+    border: 1px #f2f2f2 solid;
+    box-shadow: 2px 2px 5px #f2f2f2;
+}
+.activitiesCard > a {
+    color: black;
+    font-weight: bold;
+}
+.activitiesCard:hover {
+    transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+}
+.activitiesCardImg {
+    background-size: cover;
+    border-radius: 20px 20px 0 0;
+    background-position: center;
+}
+/* ################### */
+
+/* ####### FOOTER ####### */
+
+footer {
+    display: flex;
+    background-color: #F2F2F2;
+}
 .textFooter > a {
     color: black;
     font-size: small;
@@ -258,3 +383,4 @@ a:link
 .textFooter > a:hover {
     color : #0065FC;
 }
+/* ################### */

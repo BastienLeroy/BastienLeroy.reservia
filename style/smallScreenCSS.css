@@ -8,7 +8,7 @@
         margin-bottom: 1rem;
     }
 
-    /* _______HEADER_______ */
+    /* ######HEADER###### */
 
     .logo {
         margin-left: 1rem;
@@ -44,10 +44,10 @@
         border-bottom: 2px solid blue;
     }
     
-    /* ____________________ */
+    /* ################ */
 
 
-    /* ________MAIN________ */
+    /* ######MAIN###### */
 
     #block1 {
         align-items: center;
@@ -142,171 +142,85 @@
 
     .hostingCardImg {
         height: 138px;
-        width: 100%;
-        background-size: 105%;
-        background-repeat: no-repeat;
-        background-position: center;
         border-radius: 1rem;
     }
 
     .hostingCardBody {
         padding : 0.5rem 1rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
     }
-    .hostingCardBodyH5 {
-        margin: 0;
-        font-size: 100%;
-        font-weight: bold;
-        color: black;
-    }
-    .hostingCardBodyP {
-        font-size: 80%;
-        margin: 0;
-        color: black;
-    }
-
-    .showMore > a {
-        color: black;
-        font-size: 1.2rem;
-    }
+    
     /* ################### */
 
     /* ####### Most popular ####### */
     .mostPopular {
-        display: flex;
-        flex-direction: column;
-        background-color: #F2F2F2;
         width: 100%;
         padding:1rem ;
         margin-bottom: 1rem;
     }
     .mostPopularTitle {
-        display: flex;
-        justify-content: space-between;
         margin: 1rem 1rem 0 1rem;
     }
     .mostPopularTitleIcon {
-        display: flex;
         align-items: flex-start
     }
-    .fa-chart-line {
-        font-size: 1.5rem;
-    }
-
-    .mostPopularCardSection {
+     .mostPopularCardSection {
         display: flex;
         flex-direction: column;
     }
     .mostPopularCard {
-        display: flex;
-        flex-direction: row ;
         height: 150px;
         width: calc(100% - 4px - 0.6rem);
         margin: 0 0 0.5rem 0;
         padding: 0.3rem;
-        border-radius: 20px ;
-        background-color: white;
-        border: 2px solid #f2f2f2;
     }
     
     .mostPopularCardImg {
-        height: 100%;
-        width: 140px;
         min-width: 140px;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        border-radius: 20px 0 0 20px;
     }
-    .mostPopularCardBody {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        padding : 0.5rem 1rem;
-    }   
     .mostPopularCardBodyTop > h5 {
         font-size: 100%;
         font-weight: bold;
         color: black;
     }
     .mostPopularCardBodyTop > p {
-        font-size: 80%;
         margin: 0;
-        color: black;
     }
     .mostPopularShowMore {
         display: none
     }
+
     /* ################### */
 
     /*######## Activités ######*/
+    
     #block3  {
         width: calc(100% - 2rem);
-        margin-top: 2rem;
-        margin-bottom: 2rem;
         padding:0 1rem;
     }
-
-    .activitiesTitle {
-        /* margin : 1rem 0 1rem 1.3rem; */
-    }
-
     .activitiesCardSection  {
-        display: flex;
         flex-direction: column;
-        width: 100%;
     }
-
     .activitiesCardDuo{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
         width:100%;
     }
-
     .activitiesCard {
-        border-radius: 20px;
-        border: 1px #f2f2f2 solid;
-        box-shadow: 2px 2px 5px #f2f2f2;
         margin-bottom: 1rem;
         width: 100%;
         height: 200px;
     }
-    .activitiesCard > a {
-        color: black;
-        font-weight: bold;
-    }
-
     .activitiesCardImg {
-        background-size: cover;
-        border-radius: 20px 20px 0 0;
-        background-position: center;
         height: 75%;
     }
     /* ################### */
 
-    /* ____________________ */
-
-
-    /* _______FOOTER_______ */
+    
+    /* #######FOOTER####### */
 
     footer {
-        display: flex;
         flex-direction: column;
-        background-color: #F2F2F2;
         padding-top: 1rem;
         padding-left: 2rem;
     }
-
-    .textFooter > a {
-        color: black;
-    }
-    .textFooter > a:hover {
-        color : #0065FC;
-    }
     
-
-    /* _______________________ */
+    /* ################### */
 }

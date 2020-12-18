@@ -9,7 +9,7 @@
         margin-bottom: 1rem;
     }
 
-    /* _______HEADER_______ */
+    /* ######HEADER###### */
 
     .registerMenu {
         width: 100px;
@@ -41,10 +41,10 @@
         border-bottom: 2px solid blue;
     }
     
-    /* ____________________ */
+    /* ################ */
 
 
-    /* ________MAIN________ */
+    /* ######MAIN###### */
 
     #block1 {
         flex-wrap: wrap;
@@ -119,32 +119,13 @@
 
     .hostingCardImg {
         height: 60%;
-        width: 100%;
-        background-size: 105%;
-        background-repeat: no-repeat;
-        background-position: center;
         border-radius: 1rem 1rem 0 0;
     }
 
     .hostingCardBody {
         height: calc(40% - 0.5rem);
         margin: 0.5rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
     }
-    .hostingCardBodyH5 {
-        margin: 0;
-        font-size: 100%;
-        font-weight: bold;
-        color: black;
-    }
-    .hostingCardBodyP {
-        font-size: 80%;
-        margin: 0;
-        color: black;
-    }
-
     .showMore {
         margin : 0 0 1rem 2rem;
         width: 120px;
@@ -152,9 +133,6 @@
     .showMore > a {
         color: black;
         font-size: 1.2rem;
-    }
-    .showMore > a:hover {
-        color : #0065FC;
     }
     .showMore:hover {
         transform: scale(1.05);
@@ -167,27 +145,17 @@
 
     /* ####### Most popular ####### */
     .mostPopular {
-        display: flex;
-        flex-direction: column;
-        background-color: #F2F2F2;
         width: 95%;
         border-radius: 20px;
         padding-bottom:2rem;
         margin-bottom: 1rem;
     }
     .mostPopularTitle {
-        display: flex;
-        justify-content: space-between;
         margin: 1rem 1rem 0 1rem;
     }
     .mostPopularTitleIcon {
-        display: flex;
         align-items: center
     }
-    .fa-chart-line {
-        font-size: 1.5rem;
-    }
-
     .mostPopularCardSection {
         display: flex;
         flex-direction: column;
@@ -195,13 +163,8 @@
         width: 100%;
     }
     .mostPopularCard {
-        display: flex;
-        flex-direction: row ;
         height: 150px;
         width: 90%;
-        border-radius: 20px ;
-        background-color: white;
-        border: 2px solid #f2f2f2;
         margin-bottom: 0.5rem !important;
     }
     .mostPopularCard:last-child {
@@ -214,72 +177,33 @@
         -o-transform: scale(1.02);
         -moz-transform: scale(1.02);
     }
-    .mostPopularCardImg {
-        height: 100%;
-        width: 140px;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        border-radius: 20px 0 0 20px;
-    }
     .mostPopularCardBody {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
         width: 50%;
-        padding : 0.5rem 1rem;
     }
     .mostPopularCardBodyTop > p {
-        font-size: 80%;
         margin: 0;
-        color: black;
     }
     
     
     /* ################### */
 
     /*######## Activités ######*/
-    #block3  {
-        width: 100%;
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-    }
+    
 
     .activitiesTitle {
         margin : 1rem 0 1rem 1.3rem;
     }
 
     .activitiesCardSection  {
-        display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
-        width: 100%;
     }
-
     .activitiesCardDuo{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
         width:40%;
     }
-
     .activitiesCard {
         order: 1;
-        border-radius: 20px;
-        border: 1px #f2f2f2 solid;
-        box-shadow: 2px 2px 2px #f2f2f2;
         margin-bottom: 1rem;
-    }
-    .activitiesCard > a {
-        color: black;
-        font-weight: bold;
-    }
-    .activitiesCard:hover {
-        transform: scale(1.05);
-        -ms-transform: scale(1.05);
-        -webkit-transform: scale(1.05);
-        -o-transform: scale(1.05);
-        -moz-transform: scale(1.05);
     }
     .activitiesCardg1 {
         height: 250px;
@@ -295,12 +219,6 @@
     .activitiesCardg4 {
         height: 200px;
     }
-
-    .activitiesCardImg {
-        background-size: cover;
-        border-radius: 20px 20px 0 0;
-        background-position: center;
-    }
     .activitiesCardImg1 {
         height: 210px;
     }
@@ -315,12 +233,10 @@
     }
     /* ################### */
 
-    /* _______FOOTER_______ */
+    /* #######FOOTER####### */
 
     footer {
         height: 180px;
-        display: flex;
-        background-color: #F2F2F2;
         justify-content: space-between;
         padding-top: 2rem;
         padding-left: 1rem;
@@ -329,15 +245,8 @@
     .footerSection {
         width: 32%;
     }
-
     .textFooter {
         margin-top: 0.5rem;
-    }
-    .textFooter > a {
-        color: black;
-    }
-    .textFooter > a:hover {
-        color : #0065FC;
     }
     .textFooter:hover {
         transform: scale(1.05);
@@ -347,5 +256,5 @@
         -moz-transform: scale(1.05);
     }
 
-    /* _______________________ */
+    /* ################### */
 }

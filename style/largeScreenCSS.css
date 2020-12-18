@@ -85,7 +85,10 @@
         border-radius: 20px;
         width: 800px;
     }
-
+    
+    .hostingTitle {
+        padding-top: 1rem;
+    }
    .hostingCard {
         height: 180px;
         width: 220px;
@@ -132,6 +135,7 @@
     }
     .mostPopularTitle {
         margin: 1rem 0;
+        padding-top : 1rem;
     }
     .mostPopularTitleIcon {
         align-items: center

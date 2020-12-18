@@ -86,11 +86,7 @@
         width: 800px;
     }
 
-    .hostingTitle {
-        padding-top: 1rem;
-    }
-
-    .hostingCard {
+   .hostingCard {
         height: 180px;
         width: 220px;
         padding: 0.3rem 0.3rem 0 0.3rem;
